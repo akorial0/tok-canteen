@@ -1,0 +1,68 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    color: black;
+}
+
+img{
+    height: 67px;
+}
+
+div{
+    display: flex;
+    flex-direction: row;
+}
+
+#ID{
+    height: 100px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    border: solid black;
+}
+
+
+#icon{
+    margin-left: 777px;
+}
+
+#display{
+    flex-wrap: wrap;
+    width: 60%;
+}
+
+.BILDER{
+    height: 100px;
+    width: 50%;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+.BILDER img{
+    height: 176px;
+    width: 176px;
+}
+
+html, body {
+    overflow-x: hidden; /* Prevent horizontal scroll */
+    width: 100%;        /* Ensure content doesn't exceed viewport width */
+    margin: 0;          /* Remove default margins */
+    padding: 0;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 250px;
+    border: solid black;
+    width: 100000000px;
+}
