@@ -3,20 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Tokerud Skole</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/src/main.js" defer></script>
+    
+    <!-- init custom fonts to mem -->
     <style>
-                    @font-face {
+            @font-face {
                 font-family: 'inter';
-                src: url('/media/fontlib/Inter_28pt-Regular.ttf') format('truetype');
+                src: url('/media/fonts/inter-reg.ttf') format('truetype');
                 font-weight: 400;
                 font-style: normal;
                 font-display: swap;
                 font-optical-sizing: auto;
             }
-                        @font-face {
-                font-family: 'openrunde';
-                src: url('/media/fontlib/libopenrunde/OpenRunde-Regular.woff') format('truetype');
+
+            @font-face {
+                font-family: 'inter-b';
+                src: url('/media/fonts/inter-bold.ttf') format('truetype');
                 font-weight: 700;
                 font-style: normal;
                 font-display: swap;
@@ -25,70 +29,39 @@
     </style>
 </head>
 <body>
-    <div id="ID">
-        <div>
-            <img src="Media/OsloskolenLogo.svg" alt="">
-            <H1>Tokerud Skole</H1>
+
+    <nav class="navbr">
+          <img src="/media/OsloskolenLogo.svg" class="oslosvg">
+    <a class="active" href="#home">Portal Login</a>
+  <a href="#news" class="links">Om Oss</a>
+  <a href="#contact" class="links">Fagtillbud</a>
+  <a href="#about" class="links">Kontakt Oss</a>
+    </nav>
+
+    <!-- render progrssive blur. may be unstable on gecko/firefox or webkit/safari. chromium works just fine hehe :3 --->
+    <div class="wrapper">
+        <div class="progressive-blur">
+            <div class="blur"></div>
+            <div class="blur"></div>
+            <div class="blur"></div>
+            <div class="blur"></div>
+            <div class="blur"></div>
         </div>
-        
-        <div id="icon">
-            <img src="Media/search.svg" alt="">
-            <img src="/Media/menu.svg" alt="">
-        </div>
+        <img src="/media/tokerud.webp" alt="Custom Image" />
     </div>
-    <div id="display">
-        <div class="BILDER">
-            <img src="Media/big mac.webp" alt="">
-            <p>Spis en Big Mac. Bare får 400 rupees  </p>
-            <button> Les mer </button>
-        </div>
-
-        <div class="BILDER">
-            <img src="Media/mcdonalds-french-fries.webp" alt="">
-            <p>Vi serverer ikke french fries</p>
-            <button> Les mer</button>
-        </div>
-
-        <div class="BILDER">
-            <img src="Media/hånn.jpg" alt="">
-            <p>Vi har altid glade kunder</p>
-            <button>Les mer </button>
-        </div>
-
-        <div class="BILDER">
-            <img src="Media/OIP.webp" alt="">
-            <p>Fra drømeland</p>
-            <button>Les mer</button>
-        </div>
-    </div>  
-    <footer>
-        <h3>Om oss</h3>
-        <ul>
-            <li>Jobb</li>
-            <li>Våre lokaler</li>
-            <li><a href="https://www.youtube.com/shorts/23YelFuFzg4">I LOVE MCDONALD'S</a></li>
-        </ul>
-        <P>Telefon +47 67 67 67</P>
-        <p>E-post:kundeservice@hotmail.com</p>
-        <table>
-            <tr>
-                <th> Meny</th>
-            </tr>
-            <tr>
-                <td>Cola</td>
-                <td>10kr</td>
-            </tr>
-            <tr>
-                <td>Big Mac</td>
-                <td>400 rupees</td>
-            </tr>
-            <tr>
-                <td>Onion rings</td>
-                <td> 67kr</td>
-            </tr>
-        </table>
-    </footer>
+ 
+    <div id="header">
+        <h1>Tokerud</h1>
+        <h1>Skole</h1>
     
+    </div>
+<div id="main-content">
+    <h1 style="margin-top: 50vh;" id="hea1">Nyheter</h1>
+<div class="sear">
+   <input type="text" placeholder="Søk nyheter..." class="textb">
+</div>
+<div class="news"></div>
+</div>
 
 </body>
 </html>
