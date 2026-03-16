@@ -20,7 +20,7 @@
 </script>
 
 <script type="module">
-  import '@material/web/all.js';1
+  import '@material/web/all.js';
 </script>
 
     <!-- init custom fonts to mem -->
@@ -72,8 +72,6 @@
         <h1></h1>
         <h1></h1>
     <md-filled-button>Order</md-filled-button>
-      
-    
     <md-list style="max-width: 300px">
   
     </div>
@@ -84,16 +82,18 @@
 </div>
 <div class="news"></div>
 </div>
-<md-list style="max-width: 300px;">
+<!--apply the DRY concept here!!-->
+<md-list style="max-width: 300px;text-align: left;"">
   <md-list-item>
-    Drikker
+    Fruits
   </md-list-item>
   <md-divider></md-divider>
   <md-list-item>
-    Melk
+    Apple
 </md-list-item>
-  <md-list-item style="text-align: left;">
+  <md-list-item>
     Vann u/ kullsyre
+
   </md-list-item>
   <md-list-item>
     <div slot="headline">Cucumber</div>
