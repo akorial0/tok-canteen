@@ -1,14 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-                    @font-face {
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tokerud Skole</title>
+        <link rel="stylesheet" href="/css/style.css">
+        <script src="/src/main.js" defer></script>
+
+
+        <!--import material design3 android elements-->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+        <script type="importmap">
+            {
+              "imports": {
+                "@material/web/": "https://esm.run/@material/web/"
+              }
+            }
+        </script>
+
+        <script type="module">
+            import '@material/web/all.js';
+        </script>
+
+        <!-- init custom fonts to mem -->
+        <style>
+            @font-face {
                 font-family: 'inter';
-                src: url('/media/fontlib/Inter_28pt-Regular.ttf') format('truetype');
+                src: url('/media/fonts/inter-reg.ttf') format('truetype');
                 font-weight: 400;
                 font-style: normal;
                 font-display: swap;
@@ -36,52 +55,42 @@
             <button> Les mer </button>
         </div>
 
-        <div class="BILDER">
-            <img src="Media/mcdonalds-french-fries.webp" alt="">
-            <p>Vi serverer ikke french fries</p>
-            <button> Les mer</button>
-        </div>
+        <!--this header isnt being used for anything-->
+        <!--but for margin and padding reasons, please dont remove me! ＞﹏＜ -->
+        <div id="header">
+            <h1></h1>
+            <h1></h1>
 
-        <div class="BILDER">
-            <img src="Media/hånn.jpg" alt="">
-            <p>Vi har altid glade kunder</p>
-            <button>Les mer </button>
-        </div>
+            <md-list style="max-width: 300px"></div>
+            <div id="main-content">
+                <h1 id="hea1">Meny</h1>
+                <h1 id="hea2">Sist enderet Apr 1, 2025</h1>
+                <div class="sear">
+                    <input
+                    type="text" placeholder="Søk nyheter..." class="textb">
 
-        <div class="BILDER">
-            <img src="Media/OIP.webp" alt="">
-            <p>Fra drømeland</p>
-            <button>Les mer</button>
-        </div>
-    </div>  
-    <footer>
-        <h3>Om oss</h3>
-        <ul>
-            <li>Jobb</li>
-            <li>Våre lokaler</li>
-            <li><a href="https://www.youtube.com/shorts/23YelFuFzg4">I LOVE MCDONALD'S</a></li>
-        </ul>
-        <P>Telefon +47 67 67 67</P>
-        <p>E-post:kundeservice@hotmail.com</p>
-        <table>
-            <tr>
-                <th> Meny</th>
-            </tr>
-            <tr>
-                <td>Cola</td>
-                <td>10kr</td>
-            </tr>
-            <tr>
-                <td>Big Mac</td>
-                <td>400 rupees</td>
-            </tr>
-            <tr>
-                <td>Onion rings</td>
-                <td> 67kr</td>
-            </tr>
-        </table>
-    </footer>
-    
+                    <!--apply the DRY concept here!!-->
+                    <md-list style="max-width: 300px;text-align: left;" ">
+                        <md-list-item>
+                            Drikker
+                        </md-list-item>
+                        <md-divider></md-divider>
+                        <md-list-item>
+                            Apple
+                        </md-list-item>
+                        <md-list-item>
+                            Vann u/ kullsyre
 
-</body>
-</html>
+                        </md-list-item>
+                        <md-list-item>
+                            <div slot="headline">Cucumber</div>
+                            <div slot="supporting-text">Cucumbers are long green fruits that are just as long as this multi-line description</div>
+                        </md-list-item>
+                        <md-list-item type="link" href="https://google.com/search?q=buy+kiwis&tbm=shop" target="_blank">
+                            <div slot="headline">Shop for Kiwis</div>
+                            <div slot="supporting-text">This will link you out in a new tab</div>
+                            <md-icon slot="end">open_in_new</md-icon>
+                        </md-list-item>
+                    </md-list>
+                </body>
+            </html>
