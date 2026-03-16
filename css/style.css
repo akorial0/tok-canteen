@@ -25,6 +25,15 @@ margin-top: -70vh;
 
 #hea1 {
     margin-left: 10vh;
+    margin-top: 50vh;
+}
+#hea2 {
+    margin-left: 10vh;
+    font-size: 15px;
+   letter-spacing: 3px;
+   font-family: roboto;
+   margin-top: -1vh;
+
 }
 
 .sear {
