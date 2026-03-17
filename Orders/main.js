@@ -2,7 +2,8 @@
     let filter = document.getElementById("sokefelt").value.toLowerCase();
     let ordrer = document.getElementsByClassName("order");
 
-    
+    JORBÆR=jordbær
+
     for (let i = 0; i < ordrer.length; i++) {
         let tekst = ordrer[i].innerText.toLowerCase();
         

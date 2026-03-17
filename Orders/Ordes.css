@@ -65,7 +65,14 @@ footer{
     height: 150px;
     display: flex;
     flex-direction: column;
-    
+}
+#logo{
+    height: 90px;
+    display: flex;
+    width: 67px;
+    color: #000000;
+    margin-left: 10px;
+    margin-top: 8px;
 }
 .fjerner{
     width: 80px;
@@ -86,4 +93,10 @@ width: 700px;
 display: flex;
 margin-top: 15px;
 display: flex;
+}
+
+#link{
+    display: flex;
+    margin-top: 10px;
+    margin-left: 8px;
 }
