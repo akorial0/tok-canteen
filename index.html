@@ -49,8 +49,8 @@
                 font-style: normal;
                 font-display: swap;
                 font-optical-sizing: auto;
-            }
-            @font-face {
+                }
+                @font-face {
                 font-family: "openrunde";
                 src: url("/media/fonts/libopenrunde/Media/fontlib/libopenrunde/OpenRunde-Regular.woff") format("woff");
                 font-weight: 400;
@@ -58,8 +58,8 @@
                 font-display: swap;
             }
         </style>
-    </head>
-    <body>
+        </head>
+        <body>
 
 
         <!-- render progrssive blur. may be unstable on gecko/firefox or webkit/safari. chromium works just fine hehe :3 --->
@@ -84,6 +84,30 @@
             <div id="main-content">
                 <h1 id="hea1">Meny</h1>
                 <h1 id="hea2">Sist enderet Apr 1, 2025</h1>
+                <div class="sear">
+                    <input
+                    type="text" placeholder="Søk nyheter..." class="textb">
+        <!-- render progrssive blur. may be unstable on gecko/firefox or webkit/safari. chromium works just fine hehe :3 --->
+        <div class="wrapper">
+            <div class="progressive-blur">
+                <div class="blur"></div>
+                <div class="blur"></div>
+                <div class="blur"></div>
+                <div class="blur"></div>
+                <div class="blur"></div>
+            </div>
+            <img src="/media/tokerud.webp" alt="Custom Image"/>
+        </div>
+
+        <!--this header isnt being used for anything-->
+        <!--but for margin and padding reasons, please dont remove me! ＞﹏＜ -->
+        <div id="header">
+            <h1></h1>
+            <h1></h1>
+            <md-filled-button>Order</md-filled-button>
+            <md-list style="max-width: 300px"></div>
+            <div id="main-content">
+                <h1 style="margin-top: 50vh;" id="hea1">Nyheter</h1>
                 <div class="sear">
                     <input
                     type="text" placeholder="Søk nyheter..." class="textb">
