@@ -5,13 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="Ordes.css">
+    <script src="main.js" defer ></script>
 </head>
 <body>
+
     <div id="først">
-        <img src="media/generic avatar.svg" alt="">
-        <img src="media/search bar.svg" alt="">
-        <img src="media/Group 5.svg" alt="">
+        <img src="Media/generic avatar.svg" alt="">
+        <div>
+            <input type="text" id="sokefelt" oninput="sok()"placeholder= "   Søk etter bestillinger" >
+        </div>
+        <div id="bell">
+            <img src="Media/Group 5.svg" alt="">
+        </div>
+             
     </div>
+
     <div>
         <h1>Orders</h1>
         <h5>Tokerud skole kantine</h5>
@@ -19,71 +27,80 @@
 
     <div class="order">
         <div class="letter">
-            T
+            A
         </div>
         <div class="tekst">
-            <p>Test@hotmail.com/Person 9B</p>
+            <p>Test@hotmail.com/Ali 9B</p>
             <p>Jordbær 1000NOK</p>
         </div>
+        <button class="fjerner" onclick="this.closest('.order').remove()">Fjern</button>
+    </div>
+    
     </div>
     <div class="order">
         <div class="letter">
-            T
+            A
         </div>
         <div class="tekst">
-            <p>Test@hotmail.com/Person 9B</p>
-            <p>Jordbær 1000NOK</p>
+            <p>weal6769@osloskolen.no/Wael 9B</p>
+            <p>Brunost 17NOK</p>
         </div>
+        <button class="fjerner" onclick="this.closest('.order').remove()">Fjern</button>
     </div>
     <div class="order">
         <div class="letter">
-            T
+            A
         </div>
         <div class="tekst">
-            <p>Test@hotmail.com/Person 9B</p>
-            <p>Jordbær 1000NOK</p>
+            <p>josh123@e-mail.com/josh 9D</p>
+            <p>Mango 12NOK</p>
         </div>
+        <button class="fjerner" onclick="this.closest('.order').remove()">Fjern</button>
     </div>
     <div class="order">
         <div class="letter">
-            T
+            A
         </div>
         <div class="tekst">
-            <p>Test@hotmail.com/Person 9B</p>
-            <p>Jordbær 1000NOK</p>
+            <p>Osama41@outlook.com/Osama 9D</p>
+            <p>Melk 17NOK</p>
         </div>
+        <button class="fjerner" onclick="this.closest('.order').remove()">Fjern</button>
     </div>
     <div class="order">
         <div class="letter">
-            T
+            A
         </div>
         <div class="tekst">
-            <p>Test@hotmail.com/Person 9B</p>
-            <p>Jordbær 1000NOK</p>
+            <p>Marcus27@osloskolen.no/Marcus ?</p>
+            <p>Sour cream and onion 20NOK</p>
         </div>
+        <button class="fjerner" onclick="this.closest('.order').remove()">Fjern</button>
     </div>
     <div class="order">
         <div class="letter">
-            T
+            A
         </div>
         <div class="tekst">
-            <p>Test@hotmail.com/Person 9B</p>
-            <p>Jordbær 1000NOK</p>
+            <p>Karwan67@outlook.no/karwan ?</p>
+            <p>Smoothie 20NOK</p>
         </div>
+        <button class="fjerner" onclick="this.closest('.order').remove()">Fjern</button>
     </div>
     <div class="order">
         <div class="letter">
-            T
+            A
         </div>
         <div class="tekst">
-            <p>Test@hotmail.com/Person 9B</p>
-            <p>Jordbær 1000NOK</p>
+            <p>Amin69@hotmail.com/Amin 9D</p>
+            <p>Sjokolade melk 200NOK</p>
         </div>
+        <button class="fjerner" onclick="this.closest('.order').remove()">Fjern</button>
     </div>
     
     <div>
         <footer>
-            <img src="media/OsloskolenLogo 2.svg" alt="">
+            <img src="media" alt="">
             <a href="https://tokerud.osloskolen.no/">Inga Bjørnsonsvei 1A, 0969 Oslo</a>
         </footer>
     </div>
