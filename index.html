@@ -1,30 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tokerud Skole</title>
-    <link rel="stylesheet" href="/css/style.css">
-    <script src="/src/main.js" defer></script>
-    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tokerud Skole</title>
+        <link rel="stylesheet" href="/css/style.css">
+        <script src="/src/main.js" defer></script>
 
-    <!--import material design3 android elements-->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
-<script type="importmap">
-{
-  "imports": {
-    "@material/web/": "https://esm.run/@material/web/"
-  }
-}
-</script>
+        <!--import material design3 android elements-->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
-<script type="module">
-  import '@material/web/all.js';
-</script>
+        <script type="importmap">
+            {
+              "imports": {
+                "@material/web/": "https://esm.run/@material/web/"
+              }
+            }
+        </script>
 
-    <!-- init custom fonts to mem -->
-    <style>
+        <script type="module">
+            import '@material/web/all.js';
+        </script>
+
+        <!-- init custom fonts to mem -->
+        <style>
             @font-face {
                 font-family: 'inter';
                 src: url('/media/fonts/inter-reg.ttf') format('truetype');
@@ -41,131 +41,125 @@
                 font-style: normal;
                 font-display: swap;
                 font-optical-sizing: auto;
-        }
-    </style>
-</head>
-<body>
+            }
+        </style>
+    </head>
+    <body>
 
-    <nav class="navbr">
-          <img src="/media/OsloskolenLogo.svg" class="oslosvg">
-    <a class="active" href="#home">Portal Login</a>
-  <a href="#news" class="links">Om Oss</a>
-  <a href="#contact" class="links">Fagtillbud</a>
-  <a href="#about" class="links">Kontakt Oss</a>
-    </nav>
+        <nav class="navbr">
+            <img src="/media/OsloskolenLogo.svg" class="oslosvg">
+            <a class="active" href="#home">Portal Login</a>
+            <a href="#news" class="links">Om Oss</a>
+            <a href="#contact" class="links">Fagtillbud</a>
+            <a href="#about" class="links">Kontakt Oss</a>
+        </nav>
 
-    <!-- render progrssive blur. may be unstable on gecko/firefox or webkit/safari. chromium works just fine hehe :3 --->
-    <div class="wrapper">
-        <div class="progressive-blur">
-            <div class="blur"></div>
-            <div class="blur"></div>
-            <div class="blur"></div>
-            <div class="blur"></div>
-            <div class="blur"></div>
+        <!-- render progrssive blur. may be unstable on gecko/firefox or webkit/safari. chromium works just fine hehe :3 --->
+        <div class="wrapper">
+            <div class="progressive-blur">
+                <div class="blur"></div>
+                <div class="blur"></div>
+                <div class="blur"></div>
+                <div class="blur"></div>
+                <div class="blur"></div>
+            </div>
+            <img src="/media/tokerud.webp" alt="Custom Image"/>
         </div>
-        <img src="/media/tokerud.webp" alt="Custom Image" />
-    </div>
- 
-    <!--this header isnt being used for anything-->
-    <!--but for margin and padding reasons, please dont remove me! ＞﹏＜ -->
-    <div id="header">
-        <h1></h1>
-        <h1></h1>
-    <md-filled-button>Order</md-filled-button>
-    <md-list style="max-width: 300px">
-  
-    </div>
-<div id="main-content">
-    <h1 style="margin-top: 50vh;" id="hea1">Nyheter</h1>
-<div class="sear">
-   <input type="text" placeholder="Søk nyheter..." class="textb">
 
-<!--apply the DRY concept here!!-->
-<md-list style="max-width: 300px;text-align: left;"">
-  <md-list-item>
-    Meny
-  </md-list-item>
-  <md-divider></md-divider>
-  <md-list-item>
-    Drikker
-</md-list-item>
-  <md-list-item>
-    Vann u/ kullsyre 18kr 
+        <!--this header isnt being used for anything-->
+        <!--but for margin and padding reasons, please dont remove me! ＞﹏＜ -->
+        <div id="header">
+            <h1></h1>
+            <h1></h1>
+            <md-filled-button>Order</md-filled-button>
+            <md-list style="max-width: 300px"></div>
+            <div id="main-content">
+                <h1 style="margin-top: 50vh;" id="hea1">Nyheter</h1>
+                <div class="sear">
+                    <input
+                    type="text" placeholder="Søk nyheter..." class="textb">
 
-  </md-list-item>
-  <md-list-item>
-    Vann m/ kullsyre  20kr
+                    <!--apply the DRY concept here!!-->
+                    <md-list style="max-width: 300px;text-align: left;">
+                        <md-list-item>
+                            Meny
+                        </md-list-item>
+                        <md-divider></md-divider>
+                        <md-list-item>
+                            Drikker
+                        </md-list-item>
+                        <md-list-item>
+                            Vann u/ kullsyre 18kr
 
-  </md-list-item>
-    <md-list-item>
-    Melk 17kr 
+                        </md-list-item>
+                        <md-list-item>
+                            Vann m/ kullsyre  20kr
 
-  </md-list-item>
-    <md-list-item>
-    Sjokolade melk 20kr 
-  </md-list-item> 
-  <md-divider></md-divider>
-  <md-list-item>
-    Smoothies
+                        </md-list-item>
+                        <md-list-item>
+                            Melk 17kr
 
-  </md-list-item>
-  <md-list-item>
-    Mango  20kr
+                        </md-list-item>
+                        <md-list-item>
+                            Sjokolade melk 20kr
+                        </md-list-item>
+                        <md-divider></md-divider>
+                        <md-list-item>
+                            Smoothies
 
-  </md-list-item>
-  <md-list-item>
-   Appelsin 20kr
+                        </md-list-item>
+                        <md-list-item>
+                            Mango  20kr
 
-  </md-list-item>
-  <md-list-item>
-   Banan 20kr
+                        </md-list-item>
+                        <md-list-item>
+                            Appelsin 20kr
 
-  </md-list-item>
-  <md-list-item>
-   Jorbær 20kr
+                        </md-list-item>
+                        <md-list-item>
+                            Banan 20kr
 
-   <md-list-item>
-  
+                        </md-list-item>
+                        <md-list-item>
+                            Jorbær 20kr
 
-  </md-list-item>
-  <md-list style="max-width: 300px;text-align: left;">
-  <md-list-item>
-    Meny
-  </md-list-item>
-  <md-divider></md-divider>
-  <md-list-item>
-    Knekkebrød
-</md-list-item>
-  <md-list-item>
-    Brunøst 17kr 
+                            <md-list-item></md-list-item>
+                            <md-list style="max-width: 300px;text-align: left;">
+                                <md-list-item>
+                                    Meny
+                                </md-list-item>
+                                <md-divider></md-divider>
+                                <md-list-item>
+                                    Knekkebrød
+                                </md-list-item>
+                                <md-list-item>
+                                    Brunøst 17kr
 
-  </md-list-item>
-  <md-list-item>
-    Cheese and Chives  18kr
+                                </md-list-item>
+                                <md-list-item>
+                                    Cheese and Chives  18kr
 
-  </md-list-item>
-    <md-list-item>
-    Sourcream and Onion 20kr 
+                                </md-list-item>
+                                <md-list-item>
+                                    Sourcream and Onion 20kr
 
-  </md-list-item>
-    <md-list-item>
-    Sjokolade melk 20kr 
-  </md-list-item> 
-  <md-divider></md-divider>
-  <md-list-item>
-    Yogurt
+                                </md-list-item>
+                                <md-list-item>
+                                    Sjokolade melk 20kr
+                                </md-list-item>
+                                <md-divider></md-divider>
+                                <md-list-item>
+                                    Yogurt
 
-  </md-list-item>
-  <md-list-item>
-    Vanilje yogurt (liten) 5kr
-  </md-list-item>
-    <md-list-item>
-     Mango 12kr
-  </md-list-item>
-  </md-list-item>
-   <md-list-item>
-  
+                                </md-list-item>
+                                <md-list-item>
+                                    Vanilje yogurt (liten) 5kr
+                                </md-list-item>
+                                <md-list-item>
+                                    Mango 12kr
+                                </md-list-item>
+                            </md-list-item>
+                            <md-list-item></md-list-item>
+                        </body>
+                    </html>
 
-  </md-list-item>
-</body>
-</html>
