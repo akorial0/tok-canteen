@@ -1,18 +1,19 @@
-    function sok() {
+function sok() {
     let filter = document.getElementById("sokefelt").value.toLowerCase();
     let ordrer = document.getElementsByClassName("order");
 
-
     for (let i = 0; i < ordrer.length; i++) {
         let tekst = ordrer[i].innerText.toLowerCase();
-        
         if (tekst.includes(filter)) {
             ordrer[i].style.display = "flex";
         } else {
             ordrer[i].style.display = "none";
         }
     }
-} 
+}
+
+//IT WORKS!!!
+//handles the popup upon pressing "fjern". blur handler is written by claude ai
 let valgtKnapp = null;
 
 function fjernOrder(btn) {
@@ -22,26 +23,8 @@ function fjernOrder(btn) {
 }
 
 function bekreftFjern() {
-    if (valgtKnapp) {
-        valgtKnapp.closest('.order').remove();
-        valgtKnapp = null;
-    }
-    lukkDialog();
-}
-
-function lukkDialog() {
-    document.body.classList.remove('dialog-open');
-    document.getElementById('fjern-dialog').close();
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-    document.getElementById('fjern-dialog').addEventListener('close', () => {
-        document.body.classList.remove('dialog-open');
-        valgtKnapp = null;
-    });
-});
-function bekreftFjern() {
     const progress = document.getElementById('fjern-progress');
+    const knappSnapshot = valgtKnapp; // save reference before lukkDialog nulls it
 
     progress.style.opacity = '1';
     progress.value = 0;
@@ -62,9 +45,8 @@ function bekreftFjern() {
             setTimeout(() => {
                 progress.style.opacity = '0';
                 setTimeout(() => {
-                    if (valgtKnapp) {
-                        valgtKnapp.closest('.order').remove();
-                        valgtKnapp = null;
+                    if (knappSnapshot) {
+                        knappSnapshot.closest('.order').remove();
                     }
                     progress.value = 0;
                 }, 300);
@@ -74,3 +56,16 @@ function bekreftFjern() {
 
     requestAnimationFrame(animate);
 }
+
+function lukkDialog() {
+    document.body.classList.remove('dialog-open');
+    document.getElementById('fjern-dialog').close();
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('fjern-dialog').addEventListener('close', () => {
+        document.body.classList.remove('dialog-open');
+        valgtKnapp = null;
+    });
+});
+
