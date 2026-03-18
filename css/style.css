@@ -125,6 +125,11 @@ img {
     transform: scale(1.2);
 }
 */
+
+#md3list {
+    max-width: 300px;
+    text-align: left;
+}
 .progressive-blur {
     position: absolute;
     z-index: 6;
