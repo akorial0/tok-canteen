@@ -7,7 +7,8 @@ h1{
    font-size: 55px; 
    font-weight: 400;
    color: #1D1B20;
-   margin-bottom: 10px;
+   margin-bottom: 15px;
+   margin-left: 25px;
 }
 
 h5{
@@ -16,6 +17,7 @@ h5{
    color: #49454F;
    letter-spacing: 0,1px;
    margin-top: 20px;
+   margin-left: 20px;
 }
 
 
@@ -79,7 +81,7 @@ footer{
     height: 35px;
     background-color: #FFD8E4;
     margin-left: auto;
-    color: white;
+    color: #c6a2ff;
     border-radius: 50px;
     margin-left: auto;
     border: none;
