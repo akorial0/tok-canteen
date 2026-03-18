@@ -24,7 +24,7 @@ h5{
 
 
 
-.order{
+.order {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -103,4 +103,20 @@ display: flex;
     display: flex;
     margin-top: 10px;
     margin-left: 8px;
+}
+
+/*thanks, claude!*/
+.order {
+    display: flex;
+    align-items: center;
+}
+
+/* Style the button internals */
+.fjern-btn {
+    margin-left: auto;
+}
+.fjern-btn::part(button) {
+    background-color: #FFD8E4;
+    color: #c6a2ff;
+    border-radius: 50px;
 }
