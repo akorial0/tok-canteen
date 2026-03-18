@@ -13,3 +13,21 @@
         }
     }
 } 
+ let valgtKnapp = null;
+
+            function fjernOrder(btn) {
+                valgtKnapp = btn;
+                document.getElementById('fjern-dialog').show();
+            }
+
+            function bekreftFjern() {
+                if (valgtKnapp) {
+                    valgtKnapp.closest('.order').remove();
+                    valgtKnapp = null;
+                }
+                lukkDialog();
+            }
+
+            function lukkDialog() {
+                document.getElementById('fjern-dialog').close();
+            }

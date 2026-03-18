@@ -6,7 +6,6 @@
         <title>Admin Side</title>
         <link rel="stylesheet" href="style.css">
         <script src="main.js" defer></script>
-        <!--import material design3 android elements-->
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
         <script type="importmap">
@@ -39,6 +38,7 @@
                 font-display: swap;
                 font-optical-sizing: auto;
             }
+
             @font-face {
                 font-family: 'roboto';
                 src: url('/media/fonts/libroboto/Roboto-Regular') format('truetype');
@@ -47,6 +47,7 @@
                 font-display: swap;
                 font-optical-sizing: auto;
             }
+
             @font-face {
                 font-family: "openrunde";
                 src: url("/media/fonts/libopenrunde/Media/fontlib/libopenrunde/OpenRunde-Regular.woff") format("woff");
@@ -54,6 +55,7 @@
                 font-style: normal;
                 font-display: swap;
             }
+
             a:link,
             a:visited {
                 color: #000000;
@@ -71,15 +73,10 @@
                 text-shadow: 0 0 8px #0000003e;
             }
         </style>
+
         <script>
-    function fjernOrder(btn) {
-        btn.closest('.order').remove();
-    }
-</script>
-
-
-
-<!-- repeat for all orders -->
+           
+        </script>
     </head>
     <body>
 
@@ -91,82 +88,93 @@
             <div id="bell">
                 <img src="Media/Group 5.svg" alt="">
             </div>
-
         </div>
 
         <div>
             <h1>Orders</h1>
             <h5>Tokerud skole kantine</h5>
         </div>
-<div class="order">
-    <div class="letter">A</div>
-    <div class="tekst">
-        <p>Test@hotmail.com/Abdi 9B</p>
-        <p>Ris med banan 1000NOK</p>
-    </div>
-    <md-filled-button class="fjern-btn" onclick="fjernOrder(this)">Fjern</md-filled-button>
-</div>
 
-<div class="order">
-    <div class="letter">A</div>
-    <div class="tekst">
-        <p>weal6769@osloskolen.no/Wael 9B</p>
-        <p>Brunost 17NOK</p>
-    </div>
-    <md-filled-button class="fjern-btn" onclick="fjernOrder(this)">Fjern</md-filled-button>
-</div>
+        <div class="order">
+            <div class="letter">A</div>
+            <div class="tekst">
+                <p>Test@hotmail.com/Abdi 9B</p>
+                <p>Ris med banan 1000NOK</p>
+            </div>
+            <md-filled-button class="fjern-btn" onclick="fjernOrder(this)">Fjern</md-filled-button>
+        </div>
 
-<div class="order">
-    <div class="letter">A</div>
-    <div class="tekst">
-        <p>josh123@e-mail.com/josh 9D</p>
-        <p>Mango 12NOK</p>
-    </div>
-    <md-filled-button class="fjern-btn" onclick="fjernOrder(this)">Fjern</md-filled-button>
-</div>
+        <div class="order">
+            <div class="letter">A</div>
+            <div class="tekst">
+                <p>weal6769@osloskolen.no/Wael 9B</p>
+                <p>Brunost 17NOK</p>
+            </div>
+            <md-filled-button class="fjern-btn" onclick="fjernOrder(this)">Fjern</md-filled-button>
+        </div>
 
-<div class="order">
-    <div class="letter">A</div>
-    <div class="tekst">
-        <p>Osama41@outlook.com/Osama 9D</p>
-        <p>Melk 17NOK</p>
-    </div>
-    <md-filled-button class="fjern-btn" onclick="fjernOrder(this)">Fjern</md-filled-button>
-</div>
+        <div class="order">
+            <div class="letter">A</div>
+            <div class="tekst">
+                <p>josh123@e-mail.com/josh 9D</p>
+                <p>Mango 12NOK</p>
+            </div>
+            <md-filled-button class="fjern-btn" onclick="fjernOrder(this)">Fjern</md-filled-button>
+        </div>
 
-<div class="order">
-    <div class="letter">A</div>
-    <div class="tekst">
-        <p>Marcus27@osloskolen.no/Marcus ?</p>
-        <p>Sour cream and onion 20NOK</p>
-    </div>
-    <md-filled-button class="fjern-btn" onclick="fjernOrder(this)">Fjern</md-filled-button>
-</div>
+        <div class="order">
+            <div class="letter">A</div>
+            <div class="tekst">
+                <p>Osama41@outlook.com/Osama 9D</p>
+                <p>Melk 17NOK</p>
+            </div>
+            <md-filled-button class="fjern-btn" onclick="fjernOrder(this)">Fjern</md-filled-button>
+        </div>
 
-<div class="order">
-    <div class="letter">A</div>
-    <div class="tekst">
-        <p>Karwan67@outlook.no/karwan ?</p>
-        <p>Smoothie 20NOK</p>
-    </div>
-    <md-filled-button class="fjern-btn" onclick="fjernOrder(this)">Fjern</md-filled-button>
-</div>
+        <div class="order">
+            <div class="letter">A</div>
+            <div class="tekst">
+                <p>Marcus27@osloskolen.no/Marcus ?</p>
+                <p>Sour cream and onion 20NOK</p>
+            </div>
+            <md-filled-button class="fjern-btn" onclick="fjernOrder(this)">Fjern</md-filled-button>
+        </div>
 
-<div class="order">
-    <div class="letter">A</div>
-    <div class="tekst">
-        <p>Amin69@hotmail.com/Amin 9D</p>
-        <p>Sjokolade melk 200NOK</p>
-    </div>
-    <md-filled-button class="fjern-btn" onclick="fjernOrder(this)">Fjern</md-filled-button>
-</div>
-<footer>
-    <div id="logo">
-        <img src="Media/OsloskolenLogo 2.svg" alt="">
-    </div>
+        <div class="order">
+            <div class="letter">A</div>
+            <div class="tekst">
+                <p>Karwan67@outlook.no/karwan ?</p>
+                <p>Smoothie 20NOK</p>
+            </div>
+            <md-filled-button class="fjern-btn" onclick="fjernOrder(this)">Fjern</md-filled-button>
+        </div>
 
-    <div id="link">
-        <a href="https://tokerud.osloskolen.no/" id="addrlink">Inga Bjørnsonsvei 1A, 0969 Oslo</a>
-    </div>
+        <div class="order">
+            <div class="letter">A</div>
+            <div class="tekst">
+                <p>Amin69@hotmail.com/Amin 9D</p>
+                <p>Sjokolade melk 200NOK</p>
+            </div>
+            <md-filled-button class="fjern-btn" onclick="fjernOrder(this)">Fjern</md-filled-button>
+        </div>
 
-</footer></div></body></html>
+        <md-dialog id="fjern-dialog">
+            <div slot="headline">Fjern bestilling?</div>
+            <div slot="content">Er du sikker på at du vil fjerne denne bestillingen?</div>
+            <div slot="actions">
+                <md-text-button onclick="lukkDialog()">Avbryt</md-text-button>
+                <md-filled-button onclick="bekreftFjern()">Fjern</md-filled-button>
+            </div>
+        </md-dialog>
+
+        <footer>
+            <div id="logo">
+                <img src="Media/OsloskolenLogo 2.svg" alt="">
+            </div>
+            <div id="link">
+                <a href="https://tokerud.osloskolen.no/" id="addrlink">Inga Bjørnsonsvei 1A, 0969 Oslo</a>
+            </div>
+        </footer>
+
+    </body>
+</html>
