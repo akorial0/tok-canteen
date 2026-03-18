@@ -71,6 +71,15 @@
                 text-shadow: 0 0 8px #0000003e;
             }
         </style>
+        <script>
+    function fjernOrder(btn) {
+        btn.closest('.order').remove();
+    }
+</script>
+
+
+
+<!-- repeat for all orders -->
     </head>
     <body>
 
@@ -98,58 +107,89 @@
                 <p>Test@hotmail.com/Abdi 9B</p>
                 <p>Ris med banan 1000NOK</p>
             </div>
-            <button class="fjerner" onclick="this.closest('.order').remove()">Fjern</button>
+    <md-filled-button onclick="fjernOrder(this)">Fjern</md-filled-button>
         </div>
     </body>
-</html></div><div class="order">
-<div class="letter">
-    A
+</html>
+<div class="order">
+    <div class="letter">A</div>
+    <div class="tekst">
+        <p>Test@hotmail.com/Abdi 9B</p>
+        <p>Ris med banan 1000NOK</p>
+    </div>
+    <md-filled-button onclick="fjernOrder(this)">Fjern</md-filled-button>
 </div>
-<div class="tekst">
-    <p>weal6769@osloskolen.no/Wael 9B</p>
-    <p>Brunost 17NOK</p>
+
+<div class="order">
+    <div class="letter">A</div>
+    <div class="tekst">
+        <p>weal6769@osloskolen.no/Wael 9B</p>
+        <p>Brunost 17NOK</p>
+    </div>
+    <md-filled-button onclick="fjernOrder(this)">Fjern</md-filled-button>
 </div>
-<button class="fjerner" onclick="this.closest('.order').remove()">Fjern</button></div><div class="order">
-<div class="letter">
-    A
+</div><div class="order">
+    <div class="letter">A</div>
+    <div class="tekst">
+        <p>Test@hotmail.com/Abdi 9B</p>
+        <p>Ris med banan 1000NOK</p>
+    </div>
+    <md-filled-button onclick="fjernOrder(this)">Fjern</md-filled-button>
 </div>
-<div class="tekst">
-    <p>josh123@e-mail.com/josh 9D</p>
-    <p>Mango 12NOK</p>
+
+<div class="order">
+    <div class="letter">A</div>
+    <div class="tekst">
+        <p>weal6769@osloskolen.no/Wael 9B</p>
+        <p>Brunost 17NOK</p>
+    </div>
+    <md-filled-button onclick="fjernOrder(this)">Fjern</md-filled-button>
 </div>
-<button class="fjerner" onclick="this.closest('.order').remove()">Fjern</button></div><div class="order">
-<div class="letter">
-    A
+
+<div class="order">
+    <div class="letter">A</div>
+    <div class="tekst">
+        <p>josh123@e-mail.com/josh 9D</p>
+        <p>Mango 12NOK</p>
+    </div>
+    <md-filled-button onclick="fjernOrder(this)">Fjern</md-filled-button>
 </div>
-<div class="tekst">
-    <p>Osama41@outlook.com/Osama 9D</p>
-    <p>Melk 17NOK</p>
+
+<div class="order">
+    <div class="letter">A</div>
+    <div class="tekst">
+        <p>Osama41@outlook.com/Osama 9D</p>
+        <p>Melk 17NOK</p>
+    </div>
+    <md-filled-button onclick="fjernOrder(this)">Fjern</md-filled-button>
 </div>
-<button class="fjerner" onclick="this.closest('.order').remove()">Fjern</button></div><div class="order">
-<div class="letter">
-    A
+
+<div class="order">
+    <div class="letter">A</div>
+    <div class="tekst">
+        <p>Marcus27@osloskolen.no/Marcus ?</p>
+        <p>Sour cream and onion 20NOK</p>
+    </div>
+    <md-filled-button onclick="fjernOrder(this)">Fjern</md-filled-button>
 </div>
-<div class="tekst">
-    <p>Marcus27@osloskolen.no/Marcus ?</p>
-    <p>Sour cream and onion 20NOK</p>
+
+<div class="order">
+    <div class="letter">A</div>
+    <div class="tekst">
+        <p>Karwan67@outlook.no/karwan ?</p>
+        <p>Smoothie 20NOK</p>
+    </div>
+    <md-filled-button onclick="fjernOrder(this)">Fjern</md-filled-button>
 </div>
-<button class="fjerner" onclick="this.closest('.order').remove()">Fjern</button></div><div class="order">
-<div class="letter">
-    A
+
+<div class="order">
+    <div class="letter">A</div>
+    <div class="tekst">
+        <p>Amin69@hotmail.com/Amin 9D</p>
+        <p>Sjokolade melk 200NOK</p>
+    </div>
+    <md-filled-button onclick="fjernOrder(this)">Fjern</md-filled-button>
 </div>
-<div class="tekst">
-    <p>Karwan67@outlook.no/karwan ?</p>
-    <p>Smoothie 20NOK</p>
-</div>
-<button class="fjerner" onclick="this.closest('.order').remove()">Fjern</button></div><div class="order">
-<div class="letter">
-    A
-</div>
-<div class="tekst">
-    <p>Amin69@hotmail.com/Amin 9D</p>
-    <p>Sjokolade melk 200NOK</p>
-</div>
-<button class="fjerner" onclick="this.closest('.order').remove()">Fjern</button></div><div>
 <footer>
     <div id="logo">
         <img src="Media/OsloskolenLogo 2.svg" alt="">
