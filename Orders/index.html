@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Side</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="main.js" defer ></script>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Admin Side</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="main.js" defer></script>
 
 
-      <style>
+        <style>
             @font-face {
                 font-family: 'inter';
                 src: url('/media/fonts/inter-reg.ttf') format('truetype');
@@ -33,131 +33,116 @@
                 font-style: normal;
                 font-display: swap;
                 font-optical-sizing: auto;
-                }
-                @font-face {
+            }
+            @font-face {
                 font-family: "openrunde";
                 src: url("/media/fonts/libopenrunde/Media/fontlib/libopenrunde/OpenRunde-Regular.woff") format("woff");
                 font-weight: 400;
                 font-style: normal;
                 font-display: swap;
             }
-       a:link, a:visited {
+            a:link,
+            a:visited {
 
-  color: rgb(47, 0, 255);
-  padding: 15px 25px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-}
+                color: rgb(47, 0, 255);
+                padding: 15px 25px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+            }
 
-a:hover, a:active {
-color: #fe640b;
-  text-shadow: 0px 0px 8px #000000;
-}
-       </style>
-</head>
-<body>
+            a:hover,
+            a:active {
+                color: #fe640b;
+                text-shadow: 0 0 8px #000000;
+            }
+        </style>
+    </head>
+    <body>
 
-    <div id="først">
-        <img src="Media/generic avatar.svg" alt="">
+        <div id="først">
+            <img src="Media/generic avatar.svg" alt="">
+            <div>
+                <input type="text" id="sokefelt" oninput="sok()" placeholder="Søk etter bestillinger...">
+            </div>
+            <div id="bell">
+                <img src="Media/Group 5.svg" alt="">
+            </div>
+
+        </div>
+
         <div>
-            <input type="text" id="sokefelt" oninput="sok()"placeholder= "Søk etter bestillinger..." >
+            <h1>Orders</h1>
+            <h5>Tokerud skole kantine</h5>
         </div>
-        <div id="bell">
-            <img src="Media/Group 5.svg" alt="">
+
+        <div class="order">
+            <div class="letter">
+                A
+            </div>
+            <div class="tekst">
+                <p>Test@hotmail.com/Abdi 9B</p>
+                <p>Ris med banan 1000NOK</p>
+            </div>
+            <button class="fjerner" onclick="this.closest('.order').remove()">Fjern</button>
         </div>
-             
+    </body>
+</html></div><div class="order">
+<div class="letter">
+    A
+</div>
+<div class="tekst">
+    <p>weal6769@osloskolen.no/Wael 9B</p>
+    <p>Brunost 17NOK</p>
+</div>
+<button class="fjerner" onclick="this.closest('.order').remove()">Fjern</button></div><div class="order">
+<div class="letter">
+    A
+</div>
+<div class="tekst">
+    <p>josh123@e-mail.com/josh 9D</p>
+    <p>Mango 12NOK</p>
+</div>
+<button class="fjerner" onclick="this.closest('.order').remove()">Fjern</button></div><div class="order">
+<div class="letter">
+    A
+</div>
+<div class="tekst">
+    <p>Osama41@outlook.com/Osama 9D</p>
+    <p>Melk 17NOK</p>
+</div>
+<button class="fjerner" onclick="this.closest('.order').remove()">Fjern</button></div><div class="order">
+<div class="letter">
+    A
+</div>
+<div class="tekst">
+    <p>Marcus27@osloskolen.no/Marcus ?</p>
+    <p>Sour cream and onion 20NOK</p>
+</div>
+<button class="fjerner" onclick="this.closest('.order').remove()">Fjern</button></div><div class="order">
+<div class="letter">
+    A
+</div>
+<div class="tekst">
+    <p>Karwan67@outlook.no/karwan ?</p>
+    <p>Smoothie 20NOK</p>
+</div>
+<button class="fjerner" onclick="this.closest('.order').remove()">Fjern</button></div><div class="order">
+<div class="letter">
+    A
+</div>
+<div class="tekst">
+    <p>Amin69@hotmail.com/Amin 9D</p>
+    <p>Sjokolade melk 200NOK</p>
+</div>
+<button class="fjerner" onclick="this.closest('.order').remove()">Fjern</button></div><div>
+<footer>
+    <div id="logo">
+        <img src="Media/OsloskolenLogo 2.svg" alt="">
     </div>
 
-    <div>
-        <h1>Orders</h1>
-        <h5>Tokerud skole kantine</h5>
+    <div id="link">
+        <a href="https://tokerud.osloskolen.no/" id="addrlink">Inga Bjørnsonsvei 1A, 0969 Oslo</a>
     </div>
 
-    <div class="order">
-        <div class="letter">
-            A
-        </div>
-        <div class="tekst">
-            <p>Test@hotmail.com/Abdi 9B</p>
-            <p>Ris med banan 1000NOK</p>
-        </div>
-        <button class="fjerner" onclick="this.closest('.order').remove()">Fjern</button>
-    </div>
-    
-    </div>
-    <div class="order">
-        <div class="letter">
-            A
-        </div>
-        <div class="tekst">
-            <p>weal6769@osloskolen.no/Wael 9B</p>
-            <p>Brunost 17NOK</p>
-        </div>
-        <button class="fjerner" onclick="this.closest('.order').remove()">Fjern</button>
-    </div>
-    <div class="order">
-        <div class="letter">
-            A
-        </div>
-        <div class="tekst">
-            <p>josh123@e-mail.com/josh 9D</p>
-            <p>Mango 12NOK</p>
-        </div>
-        <button class="fjerner" onclick="this.closest('.order').remove()">Fjern</button>
-    </div>
-    <div class="order">
-        <div class="letter">
-            A
-        </div>
-        <div class="tekst">
-            <p>Osama41@outlook.com/Osama 9D</p>
-            <p>Melk 17NOK</p>
-        </div>
-        <button class="fjerner" onclick="this.closest('.order').remove()">Fjern</button>
-    </div>
-    <div class="order">
-        <div class="letter">
-            A
-        </div>
-        <div class="tekst">
-            <p>Marcus27@osloskolen.no/Marcus ?</p>
-            <p>Sour cream and onion 20NOK</p>
-        </div>
-        <button class="fjerner" onclick="this.closest('.order').remove()">Fjern</button>
-    </div>
-    <div class="order">
-        <div class="letter">
-            A
-        </div>
-        <div class="tekst">
-            <p>Karwan67@outlook.no/karwan ?</p>
-            <p>Smoothie 20NOK</p>
-        </div>
-        <button class="fjerner" onclick="this.closest('.order').remove()">Fjern</button>
-    </div>
-    <div class="order">
-        <div class="letter">
-            A
-        </div>
-        <div class="tekst">
-            <p>Amin69@hotmail.com/Amin 9D</p>
-            <p>Sjokolade melk 200NOK</p>
-        </div>
-        <button class="fjerner" onclick="this.closest('.order').remove()">Fjern</button>
-    </div>
-    
-    <div>
-        <footer>
-            <div id="logo">
-                 <img src="Media/OsloskolenLogo 2.svg" alt="">
-            </div>
-            
-            <div id="link">
-                  <a href="https://tokerud.osloskolen.no/" id="addrlink">Inga Bjørnsonsvei 1A, 0969 Oslo</a>
-            </div>
-            
-        </footer>
-    </div>
-</body>
-</html>
+</footer></div></body></html>
