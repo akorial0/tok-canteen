@@ -48,6 +48,14 @@ h5{
     margin-left: 20px;
 }
 
+body > *:not(md-dialog) {
+    filter: blur(0px);
+    transition: filter 0.2s ease;
+}
+
+body.dialog-open > *:not(md-dialog) {
+    filter: blur(5px);
+}
 .letter{
     border: solid #EADDFF;
     border-radius: 100%;

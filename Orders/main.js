@@ -13,21 +13,64 @@
         }
     }
 } 
- let valgtKnapp = null;
+let valgtKnapp = null;
 
-            function fjernOrder(btn) {
-                valgtKnapp = btn;
-                document.getElementById('fjern-dialog').show();
-            }
+function fjernOrder(btn) {
+    valgtKnapp = btn;
+    document.body.classList.add('dialog-open');
+    document.getElementById('fjern-dialog').show();
+}
 
-            function bekreftFjern() {
-                if (valgtKnapp) {
-                    valgtKnapp.closest('.order').remove();
-                    valgtKnapp = null;
-                }
-                lukkDialog();
-            }
+function bekreftFjern() {
+    if (valgtKnapp) {
+        valgtKnapp.closest('.order').remove();
+        valgtKnapp = null;
+    }
+    lukkDialog();
+}
 
-            function lukkDialog() {
-                document.getElementById('fjern-dialog').close();
-            }
+function lukkDialog() {
+    document.body.classList.remove('dialog-open');
+    document.getElementById('fjern-dialog').close();
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('fjern-dialog').addEventListener('close', () => {
+        document.body.classList.remove('dialog-open');
+        valgtKnapp = null;
+    });
+});
+function bekreftFjern() {
+    const progress = document.getElementById('fjern-progress');
+
+    progress.style.opacity = '1';
+    progress.value = 0;
+
+    lukkDialog();
+
+    let start = null;
+    const duration = 600;
+
+    function animate(timestamp) {
+        if (!start) start = timestamp;
+        const elapsed = timestamp - start;
+        progress.value = Math.min(elapsed / duration, 1);
+
+        if (elapsed < duration) {
+            requestAnimationFrame(animate);
+        } else {
+            setTimeout(() => {
+                progress.style.opacity = '0';
+                setTimeout(() => {
+                    if (valgtKnapp) {
+                        valgtKnapp.closest('.order').remove();
+                        valgtKnapp = null;
+                    }
+                    progress.value = 0;
+                }, 300);
+            }, 100);
+        }
+    }
+
+    requestAnimationFrame(animate);
+}
