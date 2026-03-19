@@ -250,6 +250,9 @@ img {
   font-weight: bold;
   color: #555;
 }
+md-list {
+  background: transparent;
+}
 .progressive-blur {
     position: absolute;
     z-index: 6;
