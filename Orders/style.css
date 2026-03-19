@@ -25,21 +25,42 @@ h1 {
 letter-spacing: 3px;
 font-family: roboto;
 font-size: 20px;
+margin-bottom: 10vh;
 }
 #hea1 {
-    margin-top: 25vh;
+    margin-top: 20vh;
     font-size: 8vh;
+    
 
 }
 
+#login-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+#avatar {
+    position: absolute;
+    left: calc(59% - 300px - 60px); /* centers based on field width + gap */
+    top: 50%;
+    transform: translateY(-50%);
+}
 
 #loginf {
     display: flex;
     flex-direction: column;
     gap: 16px;
     width: 300px;
-    margin: 0 auto;
-    margin-top: 10vh;
+        justify-content: center;
+}
+
+md-filled-text-field {
+    width: 100%;
+}
+
+md-filled-text-field {
+    width: 100%;
 }
 footer {
     width: 100%;
