@@ -234,7 +234,7 @@ img {
   gap: 24px;
   align-items: flex-start;
   flex-wrap: wrap; /* stacks on small screens */
-  padding: 16px;
+  padding: 16px 200px; /* top/bottom | left/right */
 }
 
 .menu-column {
