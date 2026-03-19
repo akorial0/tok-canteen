@@ -6,15 +6,20 @@
         <title>Admin Side</title>
         <link rel="stylesheet" href="style.css">
         <script src="main.js" defer></script>
-        <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-        <!--import material3 web comp-->
-        <script type="importmap">
-            {
-                          "imports": {
-                            "@material/web/": "https://esm.run/@material/web/"
-                          }
-                        }
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <script type="importmap">
+    {
+      "imports": {
+        "@material/web/": "https://esm.run/@material/web/"
+      }
+    }
+  </script>
+  <script type="module">
+    import '@material/web/all.js';
+    import {styles as typescaleStyles} from '@material/web/typography/md-typescale-styles.js';
+
+    document.adoptedStyleSheets.push(typescaleStyles.styleSheet);
+  </script>
         </script>
 
 
@@ -43,6 +48,11 @@
             <h5 id="hea2">Tokerud skole kantine</h5>
         </div>
 
+        <md-filled-text-field label="Username" type="email">
+</md-filled-text-field>
+
+<md-filled-text-field label="Password" type="password">
+</md-filled-text-field>
        
         <footer>
             <div id="logo">
