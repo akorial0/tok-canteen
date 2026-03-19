@@ -20,7 +20,7 @@ h1 {
 }
 
 #header {
-margin-top: -70vh;
+margin-top: -50vh;
 }
 
 #hea1 {
@@ -118,6 +118,10 @@ p {
 
 }
 
+#bannerimg {
+height: 115vh;
+margin-top: -10vh;
+}
 /*
 img {
     width: 100%;
