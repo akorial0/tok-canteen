@@ -17,9 +17,6 @@
                         }
         </script>
 
-        <script type="module">
-            import '@material/web/all.js';
-        </script>
 
         <style>
             /*init fonts*/
@@ -32,147 +29,21 @@
                 font-optical-sizing: auto;
             }
 
-            @font-face {
-                font-family: 'inter-b';
-                src: url('/media/fonts/inter-bold.ttf') format('truetype');
-                font-weight: 400;
-                font-style: normal;
-                font-display: swap;
-                font-optical-sizing: auto;
-            }
-
-            @font-face {
-                font-family: 'roboto';
-                src: url('/media/fonts/libroboto/Roboto-Regular') format('truetype');
-                font-weight: 400;
-                font-style: normal;
-                font-display: swap;
-                font-optical-sizing: auto;
-            }
-
-            @font-face {
-                font-family: "openrunde";
-                src: url("/media/fonts/libopenrunde/Media/fontlib/libopenrunde/OpenRunde-Regular.woff") format("woff");
-                font-weight: 400;
-                font-style: normal;
-                font-display: swap;
-            }
-            /*specify link colors*/
-            a:link,
-            a:visited {
-                color: #000000;
-                padding: 15px 25px;
-                text-align: center;
-                text-decoration: none;
-                display: inline-block;
-                text-shadow: 0 0 0 transparent;
-
-                /*animate color and shadow upon hovering mouse*/
-                transition: text-shadow 0.1s ease-in-out, color 0.1s ease-in-out;
-            }
-
-            a:hover,
-            a:active {
-                color: #c0c9ff;
-                text-shadow: 0 0 8px #0000003e;
-            }
         </style>
 
     </head>
     <body>
         <!--progress bar. shows when pressing "Fjern". invisible until javascript changes the opacity-->
         <md-linear-progress id="fjern-progress" value="0" style="opacity: 0; transition: opacity 0.3s ease;"></md-linear-progress>
-        <div id="først">
-            <img src="Media/generic avatar.svg" alt="">
-            <div id="sokefelt-wrapper">
-                <svg id="sok-ikon" xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewbox="0 0 24 24">
-                    <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
-                </svg>
-                <input type="text" id="sokefelt" oninput="sok()" placeholder="Søk etter bestillinger...">
-                <md-list id="forslag"></md-list>
-            </div>
-            <div id="bell">
-                <img src="Media/Group 5.svg" alt="">
-            </div>
+       
         </div>
 
         <div>
-            <h1>Orders</h1>
+            <h1>Login</h1>
             <h5 id="hea2">Tokerud skole kantine</h5>
         </div>
 
-        <div class="order">
-            <div class="letter">A</div>
-            <div class="tekst">
-                <p>Test@hotmail.com/Abdi 9B</p>
-                <p>Ris med banan 1000NOK</p>
-            </div>
-            <md-filled-button class="fjern-btn" onclick="fjernOrder(this)">Fjern</md-filled-button>
-        </div>
-
-        <div class="order">
-            <div class="letter">A</div>
-            <div class="tekst">
-                <p>weal6769@osloskolen.no/Wael 9B</p>
-                <p>Brunost 17NOK</p>
-            </div>
-            <md-filled-button class="fjern-btn" onclick="fjernOrder(this)">Fjern</md-filled-button>
-        </div>
-
-        <div class="order">
-            <div class="letter">A</div>
-            <div class="tekst">
-                <p>josh123@e-mail.com/josh 9D</p>
-                <p>Mango 12NOK</p>
-            </div>
-            <md-filled-button class="fjern-btn" onclick="fjernOrder(this)">Fjern</md-filled-button>
-        </div>
-
-        <div class="order">
-            <div class="letter">A</div>
-            <div class="tekst">
-                <p>Osama41@outlook.com/Osama 9D</p>
-                <p>Melk 17NOK</p>
-            </div>
-            <md-filled-button class="fjern-btn" onclick="fjernOrder(this)">Fjern</md-filled-button>
-        </div>
-
-        <div class="order">
-            <div class="letter">A</div>
-            <div class="tekst">
-                <p>Marcus27@osloskolen.no/Marcus ?</p>
-                <p>Sour cream and onion 20NOK</p>
-            </div>
-            <md-filled-button class="fjern-btn" onclick="fjernOrder(this)">Fjern</md-filled-button>
-        </div>
-
-        <div class="order">
-            <div class="letter">A</div>
-            <div class="tekst">
-                <p>Karwan67@outlook.no/karwan ?</p>
-                <p>Smoothie 20NOK</p>
-            </div>
-            <md-filled-button class="fjern-btn" onclick="fjernOrder(this)">Fjern</md-filled-button>
-        </div>
-
-        <div class="order">
-            <div class="letter">A</div>
-            <div class="tekst">
-                <p>Amin69@hotmail.com/Amin 9D</p>
-                <p>Sjokolade melk 200NOK</p>
-            </div>
-            <md-filled-button class="fjern-btn" onclick="fjernOrder(this)">Fjern</md-filled-button>
-        </div>
-
-        <md-dialog id="fjern-dialog">
-            <div slot="headline">Fjern bestilling?</div>
-            <div slot="content">Er du sikker på at du vil fjerne denne bestillingen?</div>
-            <div slot="actions">
-                <md-text-button onclick="lukkDialog()">Avbryt</md-text-button>
-                <md-filled-button onclick="bekreftFjern()">Fjern</md-filled-button>
-            </div>
-        </md-dialog>
-
+       
         <footer>
             <div id="logo">
                 <img src="Media/OsloskolenLogo 2.svg" alt="">
