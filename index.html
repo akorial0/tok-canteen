@@ -84,12 +84,7 @@
             <div id="main-content">
                 <h1 id="hea1">Meny</h1>
                 <h1 id="hea2">Sist enderet Apr 1, 2025</h1>
-            <div id="sokefelt-wrapper">
-                <svg id="sok-ikon" xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewbox="0 0 24 24">
-                    <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
-                </svg>
-                <input type="text" id="sokefelt" oninput="sok()" placeholder="Søk etter bestillinger...">
-                <md-list id="forslag"></md-list>
+
         <!-- render progrssive blur. may be unstable on gecko/firefox or webkit/safari. chromium works just fine hehe :3 --->
         <div class="wrapper">
             <div class="progressive-blur">
@@ -101,103 +96,52 @@
             </div>
         </div>
 
-        <!--this header isnt being used for anything-->
-        <!--but for margin and padding reasons, please dont remove me! ＞﹏＜ -->
-        <div id="header">
-            <h1></h1>
-            <h1></h1>
 
 
-            <div id="main-content">
-                <h1 style="margin-top: 50vh;" id="hea1">Meny</h1>
 
+<div id="menu-columns">
 
-<!--apply the DRY concept here!!-->
-<md-list id="md3list">
-  <md-list-item>
-    Meny
-  </md-list-item>
-  <md-divider></md-divider>
-  <md-list-item>
-    Drikker
-</md-list-item>
-  <md-list-item>
-    Vann u/ kullsyre 18kr 
+  <!-- Column 1: Drikker + Smoothies -->
+  <div class="menu-column">
+    <md-list>
+      <md-list-item class="category-header">Drikker</md-list-item>
+      <md-divider></md-divider>
+      <md-list-item>Melk <span slot="end">17kr</span></md-list-item>
+      <md-list-item>Vann u/ kullsyre <span slot="end">18kr</span></md-list-item>
+      <md-list-item>Vann m/ kullsyre <span slot="end">20kr</span></md-list-item>
+      <md-list-item>Sjokolade melk <span slot="end">20kr</span></md-list-item>
 
-  </md-list-item>
-  <md-list-item>
-    Vann m/ kullsyre  20kr
+      <md-list-item class="category-header">Smoothies</md-list-item>
+      <md-divider></md-divider>
+      <md-list-item>Mango <span slot="end">20kr</span></md-list-item>
+      <md-list-item>Appelsin <span slot="end">20kr</span></md-list-item>
+      <md-list-item>Banan <span slot="end">20kr</span></md-list-item>
+      <md-list-item>Jordbær <span slot="end">20kr</span></md-list-item>
+    </md-list>
+  </div>
 
-  </md-list-item>
-    <md-list-item>
-    Melk 17kr 
+  <!-- Column 2: Knekkebrød -->
+  <div class="menu-column">
+    <md-list>
+      <md-list-item class="category-header">Knekkebrød</md-list-item>
+      <md-divider></md-divider>
+      <md-list-item>Brunost <span slot="end">17kr</span></md-list-item>
+      <md-list-item>Cheese and Chives <span slot="end">18kr</span></md-list-item>
+      <md-list-item>Sour Cream and Onion <span slot="end">20kr</span></md-list-item>
+    </md-list>
+  </div>
 
-  </md-list-item>
-    <md-list-item>
-    Sjokolade melk 20kr 
-  </md-list-item> 
-  <md-divider></md-divider>
-  <md-list-item>
-    Smoothies
+  <!-- Column 3: Yogurt -->
+  <div class="menu-column">
+    <md-list>
+      <md-list-item class="category-header">Yogurt</md-list-item>
+      <md-divider></md-divider>
+      <md-list-item>Vanilje yogurt (liten) <span slot="end">5kr</span></md-list-item>
+      <md-list-item>Mango <span slot="end">12kr</span></md-list-item>
+      <md-list-item>Banan <span slot="end">12kr</span></md-list-item>
+    </md-list>
+  </div>
 
-  </md-list-item>
-  <md-list-item>
-    Mango  20kr
-
-  </md-list-item>
-  <md-list-item>
-   Appelsin 20kr
-
-  </md-list-item>
-  <md-list-item>
-   Banan 20kr
-
-  </md-list-item>
-  <md-list-item>
-   Jorbær 20kr
-
-   <md-list-item>
-  
-
-  </md-list-item>
-  <md-list style="max-width: 300px;text-align: left;">
-  <md-list-item>
-    Meny
-  </md-list-item>
-  <md-divider></md-divider>
-  <md-list-item>
-    Knekkebrød
-</md-list-item>
-  <md-list-item>
-    Brunøst 17kr 
-
-  </md-list-item>
-  <md-list-item>
-    Cheese and Chives  18kr
-
-  </md-list-item>
-    <md-list-item>
-    Sourcream and Onion 20kr 
-
-  </md-list-item>
-    <md-list-item>
-    Sjokolade melk 20kr 
-  </md-list-item> 
-  <md-divider></md-divider>
-  <md-list-item>
-    Yogurt
-
-  </md-list-item>
-  <md-list-item>
-    Vanilje yogurt (liten) 5kr
-  </md-list-item>
-    <md-list-item>
-     Mango 12kr
-  </md-list-item>
-  </md-list-item>
-   <md-list-item>
-  
-
-  </md-list-item>
+</div>
 </body>
 </html>

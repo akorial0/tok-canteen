@@ -228,9 +228,27 @@ img {
     font-weight: 600;
 }
 
-#md3list {
-    max-width: 300px;
-    text-align: left;
+#menu-columns {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  align-items: flex-start;
+  flex-wrap: wrap; /* stacks on small screens */
+  padding: 16px;
+}
+
+.menu-column {
+  flex: 1;
+  min-width: 220px;
+}
+
+.menu-column md-list {
+  width: 100%;
+}
+
+.category-header {
+  font-weight: bold;
+  color: #555;
 }
 .progressive-blur {
     position: absolute;
