@@ -19,9 +19,15 @@ h5 {
     color: #49454F;
     letter-spacing: 0.1px;
     margin-top: 20px;
-    margin-left: 20px;
+    margin-left: 25px;
 }
+#hea2 {
+letter-spacing: 1vh;
+font-family: roboto;
+font-size: 3vh;
 
+
+}
 .order {
     display: flex;
     flex-direction: row;
