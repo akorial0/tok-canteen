@@ -1,5 +1,5 @@
 # tok-canteen
-a prototype of the tokerud school cantina website. made for school work
+a prototype of the tokerud school cantina website. made for a school project
 
 ## [contributors](https://github.com/akorial0/tok-canteen/graphs/contributors)
 
