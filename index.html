@@ -71,7 +71,7 @@
                 <div class="blur"></div>
                 <div class="blur"></div>
             </div>
-            <img src="/media/tokerud.webp" alt="Custom Image"/>
+            <img src="/media/tokerud.webp" alt="Custom Image" fetchpriority="high"/>
         </div>
 
         <!--this header isnt being used for anything-->
@@ -80,13 +80,11 @@
             <h1></h1>
             <h1></h1>
 
-            <md-list style="max-width: 300px"></div>
+
             <div id="main-content">
                 <h1 id="hea1">Meny</h1>
                 <h1 id="hea2">Sist enderet Apr 1, 2025</h1>
-                <div class="sear">
-                    <input
-                    type="text" placeholder="Søk nyheter..." class="textb">
+
         <!-- render progrssive blur. may be unstable on gecko/firefox or webkit/safari. chromium works just fine hehe :3 --->
         <div class="wrapper">
             <div class="progressive-blur">
@@ -96,44 +94,54 @@
                 <div class="blur"></div>
                 <div class="blur"></div>
             </div>
-            <img src="/media/tokerud.webp" alt="Custom Image"/>
         </div>
 
-        <!--this header isnt being used for anything-->
-        <!--but for margin and padding reasons, please dont remove me! ＞﹏＜ -->
-        <div id="header">
-            <h1></h1>
-            <h1></h1>
-            <md-filled-button>Order</md-filled-button>
-            <md-list style="max-width: 300px"></div>
-            <div id="main-content">
-                <h1 style="margin-top: 50vh;" id="hea1">Nyheter</h1>
-                <div class="sear">
-                    <input
-                    type="text" placeholder="Søk nyheter..." class="textb">
 
-                    <!--apply the DRY concept here!!-->
-                    <md-list style="max-width: 300px;text-align: left;" ">
-                        <md-list-item>
-                            Drikker
-                        </md-list-item>
-                        <md-divider></md-divider>
-                        <md-list-item>
-                            Apple
-                        </md-list-item>
-                        <md-list-item>
-                            Vann u/ kullsyre
 
-                        </md-list-item>
-                        <md-list-item>
-                            <div slot="headline">Cucumber</div>
-                            <div slot="supporting-text">Cucumbers are long green fruits that are just as long as this multi-line description</div>
-                        </md-list-item>
-                        <md-list-item type="link" href="https://google.com/search?q=buy+kiwis&tbm=shop" target="_blank">
-                            <div slot="headline">Shop for Kiwis</div>
-                            <div slot="supporting-text">This will link you out in a new tab</div>
-                            <md-icon slot="end">open_in_new</md-icon>
-                        </md-list-item>
-                    </md-list>
-                </body>
-            </html>
+
+<div id="menu-columns">
+
+  <!-- Column 1: Drikker + Smoothies -->
+  <div class="menu-column">
+    <md-list>
+      <md-list-item class="category-header">Drikker</md-list-item>
+      <md-divider></md-divider>
+      <md-list-item>Melk <span slot="end">17kr</span></md-list-item>
+      <md-list-item>Vann u/ kullsyre <span slot="end">18kr</span></md-list-item>
+      <md-list-item>Vann m/ kullsyre <span slot="end">20kr</span></md-list-item>
+      <md-list-item>Sjokolade melk <span slot="end">20kr</span></md-list-item>
+
+      <md-list-item class="category-header">Smoothies</md-list-item>
+      <md-divider></md-divider>
+      <md-list-item>Mango <span slot="end">20kr</span></md-list-item>
+      <md-list-item>Appelsin <span slot="end">20kr</span></md-list-item>
+      <md-list-item>Banan <span slot="end">20kr</span></md-list-item>
+      <md-list-item>Jordbær <span slot="end">20kr</span></md-list-item>
+    </md-list>
+  </div>
+
+  <!-- Column 2: Knekkebrød -->
+  <div class="menu-column">
+    <md-list>
+      <md-list-item class="category-header">Knekkebrød</md-list-item>
+      <md-divider></md-divider>
+      <md-list-item>Brunost <span slot="end">17kr</span></md-list-item>
+      <md-list-item>Cheese and Chives <span slot="end">18kr</span></md-list-item>
+      <md-list-item>Sour Cream and Onion <span slot="end">20kr</span></md-list-item>
+    </md-list>
+  </div>
+
+  <!-- Column 3: Yogurt -->
+  <div class="menu-column">
+    <md-list>
+      <md-list-item class="category-header">Yogurt</md-list-item>
+      <md-divider></md-divider>
+      <md-list-item>Vanilje yogurt (liten) <span slot="end">5kr</span></md-list-item>
+      <md-list-item>Mango <span slot="end">12kr</span></md-list-item>
+      <md-list-item>Banan <span slot="end">12kr</span></md-list-item>
+    </md-list>
+  </div>
+
+</div>
+</body>
+</html>
