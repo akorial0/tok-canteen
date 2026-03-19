@@ -1,16 +1,58 @@
 function sok() {
     let filter = document.getElementById("sokefelt").value.toLowerCase();
     let ordrer = document.getElementsByClassName("order");
+    let forslag = document.getElementById("forslag");
+    let wrapper = document.getElementById("sokefelt-wrapper");
+
+    // reposition dropdown to match wrapper
+    let rect = wrapper.getBoundingClientRect();
+    forslag.style.top = (rect.bottom + window.scrollY) + 'px';
+    forslag.style.left = rect.left + 'px';
+    forslag.style.width = rect.width + 'px';
+
+    forslag.innerHTML = '';
 
     for (let i = 0; i < ordrer.length; i++) {
         let tekst = ordrer[i].innerText.toLowerCase();
-        if (tekst.includes(filter)) {
+        if (tekst.includes(filter) && filter.length > 0) {
             ordrer[i].style.display = "flex";
-        } else {
+
+            let rå = ordrer[i].querySelector('.tekst p').innerText;
+            let highlighted = rå.replace(new RegExp(filter, 'gi'), match => `<span>${match}</span>`);
+
+            let item = document.createElement('md-list-item');
+            item.setAttribute('type', 'button');
+            item.innerHTML = `<div slot="headline">${highlighted}</div>`;
+            item.addEventListener('click', () => {
+                document.getElementById("sokefelt").value = rå;
+                skjulForslag();
+                sok();
+            });
+            forslag.appendChild(item);
+        } else if (!tekst.includes(filter)) {
             ordrer[i].style.display = "none";
         }
     }
+
+    if (forslag.children.length > 0 && filter.length > 0) {
+        forslag.classList.add('synlig');
+        wrapper.classList.remove('ingen-forslag');
+    } else {
+        skjulForslag();
+    }
 }
+
+function skjulForslag() {
+    document.getElementById("forslag").classList.remove('synlig');
+    document.getElementById("sokefelt-wrapper").classList.add('ingen-forslag');
+}
+
+document.addEventListener('click', (e) => {
+    if (!document.getElementById('sokefelt-wrapper').contains(e.target) &&
+        !document.getElementById('forslag').contains(e.target)) {
+        skjulForslag();
+    }
+});
 
 //IT WORKS!!!
 //handles the popup upon pressing "fjern". blur handler is written by claude ai
