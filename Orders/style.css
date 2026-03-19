@@ -17,30 +17,29 @@ h1 {
     font-weight: 400;
     color: #1D1B20;
     margin-bottom: 15px;
-    margin-left: 25px;
+    margin-left: 150px;
 }
 
-h5 {
-    font-size: 25px;
-    font-weight: 500;
-    color: #49454F;
-    letter-spacing: 0.1px;
-    margin-top: 20px;
-    margin-left: 25px;
-}
+
 #hea2 {
-letter-spacing: 1vh;
+letter-spacing: 3px;
 font-family: roboto;
-font-size: 3vh;
-
+font-size: 20px;
+}
+#hea1 {
+    margin-top: 25vh;
+    font-size: 8vh;
 
 }
+
+
 #loginf {
     display: flex;
     flex-direction: column;
     gap: 16px;
     width: 300px;
     margin: 0 auto;
+    margin-top: 10vh;
 }
 footer {
     width: 100%;
@@ -49,6 +48,7 @@ footer {
     height: 150px;
     display: flex;
     flex-direction: column;
+    margin-top: 50vh;
 }
 
 #logo {
