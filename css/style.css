@@ -10,7 +10,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
-  
+    font-weight: 400;
+  -webkit-text-stroke: 0.5px; 
 }
 
 .addr {
