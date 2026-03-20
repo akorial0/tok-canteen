@@ -4,9 +4,8 @@ function sok() {
     let forslag = document.getElementById("forslag");
     let wrapper = document.getElementById("sokefelt-wrapper");
 
-    // reposition dropdown to match wrapper
     let rect = wrapper.getBoundingClientRect();
-    forslag.style.top = (rect.bottom + window.scrollY) + 'px';
+    forslag.style.top = rect.bottom + 'px';
     forslag.style.left = rect.left + 'px';
     forslag.style.width = rect.width + 'px';
 
@@ -20,15 +19,16 @@ function sok() {
             let rå = ordrer[i].querySelector('.tekst p').innerText;
             let highlighted = rå.replace(new RegExp(filter, 'gi'), match => `<span>${match}</span>`);
 
-            let item = document.createElement('md-list-item');
-            item.setAttribute('type', 'button');
-            item.innerHTML = `<div slot="headline">${highlighted}</div>`;
-            item.addEventListener('click', () => {
+            let item = document.createElement('div');
+            item.classList.add('forslag-item');
+            item.innerHTML = `${highlighted}<md-ripple></md-ripple>`;
+            item.onclick = () => {
                 document.getElementById("sokefelt").value = rå;
                 skjulForslag();
                 sok();
-            });
+            };
             forslag.appendChild(item);
+
         } else if (!tekst.includes(filter)) {
             ordrer[i].style.display = "none";
         }

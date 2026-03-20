@@ -6,50 +6,39 @@
         <title>Admin Side</title>
         <link rel="stylesheet" href="style.css">
         <script src="main.js" defer></script>
-        <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-        <!--import material3 web comp-->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
         <script type="importmap">
             {
-                          "imports": {
-                            "@material/web/": "https://esm.run/@material/web/"
-                          }
-                        }
+              "imports": {
+                "@material/web/": "https://esm.run/@material/web/"
+              }
+            }
         </script>
-
         <script type="module">
             import '@material/web/all.js';
         </script>
-
         <style>
-            /*init fonts*/
             @font-face {
                 font-family: 'inter';
                 src: url('/media/fonts/inter-reg.ttf') format('truetype');
                 font-weight: 400;
                 font-style: normal;
                 font-display: swap;
-                font-optical-sizing: auto;
             }
-
             @font-face {
                 font-family: 'inter-b';
                 src: url('/media/fonts/inter-bold.ttf') format('truetype');
                 font-weight: 400;
                 font-style: normal;
                 font-display: swap;
-                font-optical-sizing: auto;
             }
-
             @font-face {
                 font-family: 'roboto';
                 src: url('/media/fonts/libroboto/Roboto-Regular') format('truetype');
                 font-weight: 400;
                 font-style: normal;
                 font-display: swap;
-                font-optical-sizing: auto;
             }
-
             @font-face {
                 font-family: "openrunde";
                 src: url("/media/fonts/libopenrunde/Media/fontlib/libopenrunde/OpenRunde-Regular.woff") format("woff");
@@ -57,44 +46,40 @@
                 font-style: normal;
                 font-display: swap;
             }
-            /*specify link colors*/
-            a:link,
-            a:visited {
+            a:link, a:visited {
                 color: #000000;
                 padding: 15px 25px;
                 text-align: center;
                 text-decoration: none;
                 display: inline-block;
                 text-shadow: 0 0 0 transparent;
-
-                /*animate color and shadow upon hovering mouse*/
                 transition: text-shadow 0.1s ease-in-out, color 0.1s ease-in-out;
             }
-
-            a:hover,
-            a:active {
+            a:hover, a:active {
                 color: #c0c9ff;
                 text-shadow: 0 0 8px #0000003e;
             }
         </style>
-
     </head>
     <body>
-        <!--progress bar. shows when pressing "Fjern". invisible until javascript changes the opacity-->
+
         <md-linear-progress id="fjern-progress" value="0" style="opacity: 0; transition: opacity 0.3s ease;"></md-linear-progress>
+
         <div id="først">
             <img src="Media/generic avatar.svg" alt="">
             <div id="sokefelt-wrapper">
-                <svg id="sok-ikon" xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewbox="0 0 24 24">
+                <svg id="sok-ikon" xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 24 24">
                     <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
                 </svg>
                 <input type="text" id="sokefelt" oninput="sok()" placeholder="Søk etter bestillinger...">
-                <md-list id="forslag"></md-list>
             </div>
             <div id="bell">
                 <img src="Media/Group 5.svg" alt="">
             </div>
         </div>
+
+        <!-- forslag is now a direct child of body, NOT inside the wrapper -->
+        <div id="forslag"></div>
 
         <div>
             <h1>Orders</h1>
@@ -109,7 +94,6 @@
             </div>
             <md-filled-button class="fjern-btn" onclick="fjernOrder(this)">Fjern</md-filled-button>
         </div>
-
         <div class="order">
             <div class="letter">A</div>
             <div class="tekst">
@@ -118,7 +102,6 @@
             </div>
             <md-filled-button class="fjern-btn" onclick="fjernOrder(this)">Fjern</md-filled-button>
         </div>
-
         <div class="order">
             <div class="letter">A</div>
             <div class="tekst">
@@ -127,7 +110,6 @@
             </div>
             <md-filled-button class="fjern-btn" onclick="fjernOrder(this)">Fjern</md-filled-button>
         </div>
-
         <div class="order">
             <div class="letter">A</div>
             <div class="tekst">
@@ -136,7 +118,6 @@
             </div>
             <md-filled-button class="fjern-btn" onclick="fjernOrder(this)">Fjern</md-filled-button>
         </div>
-
         <div class="order">
             <div class="letter">A</div>
             <div class="tekst">
@@ -145,7 +126,6 @@
             </div>
             <md-filled-button class="fjern-btn" onclick="fjernOrder(this)">Fjern</md-filled-button>
         </div>
-
         <div class="order">
             <div class="letter">A</div>
             <div class="tekst">
@@ -154,7 +134,6 @@
             </div>
             <md-filled-button class="fjern-btn" onclick="fjernOrder(this)">Fjern</md-filled-button>
         </div>
-
         <div class="order">
             <div class="letter">A</div>
             <div class="tekst">
@@ -184,4 +163,3 @@
 
     </body>
 </html>
-
