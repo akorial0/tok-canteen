@@ -7,13 +7,29 @@ body {
     font-family: inter;
     background-color: #ffffff;
     color: rgb(255, 255, 255);
-  -webkit-font-smoothing: antialiased;
+      -webkit-text-stroke: 0.5px; 
+        -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
     font-weight: 400;
-  -webkit-text-stroke: 0.5px; 
+
+}
+:root {
+  --inter-stroke: 0.3px;
+  --other-stroke: 0;
 }
 
+body {
+  -webkit-text-stroke: var(--other-stroke);
+}
+
+h1, p, #hea1 {  /* wherever you use Inter */
+  -webkit-text-stroke: var(--inter-stroke);
+}
+
+#hea2 {  /* Roboto elements */
+  -webkit-text-stroke: var(--other-stroke);
+}
 .addr {
     font-size: 2vh;
     letter-spacing: 1px;
