@@ -45,7 +45,7 @@ h1 {
   font-size: 7vh;
 }
 #header {
-margin-top: -50vh;
+margin-top: -60vh;
 }
 
 #hea1 {
@@ -302,7 +302,7 @@ md-list {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 40%;  /* how tall the fade zone is */
+  height: 30%;  /* how tall the fade zone is */
   background: linear-gradient(to bottom, transparent, #ffffff);
   z-index: 7;   /* above your blur layers (which go up to z-index 5) */
   pointer-events: none;
