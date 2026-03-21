@@ -43,18 +43,19 @@ h1 {
 #headtext {
   letter-spacing: 2.4px;
   font-size: 7vh;
+   margin-left: 191px;
 }
 #header {
 margin-top: -60vh;
 }
 
 #hea1 {
-    margin-left: 10vh;
+    margin-left: 191px;
     margin-top: 30vh;
     font-size: 7vh;
 }
 #hea2 {
-    margin-left: 10vh;
+ margin-left: 191px;
     font-size: 15px;
    letter-spacing: 3px;
    font-family: roboto;
