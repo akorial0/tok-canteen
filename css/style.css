@@ -40,6 +40,10 @@ h1 {
     font-weight: normal;
 }
 
+#headtext {
+  letter-spacing: 2.4px;
+  font-size: 7vh;
+}
 #header {
 margin-top: -50vh;
 }
