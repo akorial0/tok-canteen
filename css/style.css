@@ -15,7 +15,7 @@ body {
 
 }
 :root {
-  --inter-stroke: 0.3px;
+  --inter-stroke: 0.7px;
   --other-stroke: 0;
 }
 
@@ -46,7 +46,8 @@ margin-top: -50vh;
 
 #hea1 {
     margin-left: 10vh;
-    margin-top: 50vh;
+    margin-top: 30vh;
+    font-size: 7vh;
 }
 #hea2 {
     margin-left: 10vh;
