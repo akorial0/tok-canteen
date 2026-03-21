@@ -88,13 +88,13 @@ footer{
 }
 
 #sokefelt{
-background-color: #F3EDF7;
-border-radius: 50px;
-height: 45px;
-width: 700px;
-display: flex;
-margin-top: 15px;
-display: flex;
+   background-color: #F3EDF7;
+   border-radius: 50px;
+   height: 45px;
+   width: 700px;
+   display: flex;
+   margin-top: 15px;
+   display: flex;
 }
 
 #link{
