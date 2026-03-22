@@ -8,16 +8,18 @@ h1{
    font-weight: 400;
    color: #1D1B20;
    margin-bottom: 15px;
-   margin-left: 20px;
+   margin-left: 50px;
+   margin-top: 100px;
 }
 
 h5{
    font-size: 18px;
-   font-weight: 200;
+   font-weight: 150;
    color: #49454F;
    letter-spacing: 0,1px;
-   margin-top: 20px;
-   margin-left: 20px;
+   margin-top: 10px;
+   margin-left: 50px;
+   font-family: 'Roboto';
 }
 
 .order{
@@ -30,6 +32,12 @@ h5{
     margin-top: 15px;
     padding-right: 15px;
     border-radius: 15px;
+    margin-left: 20px;
+}
+
+#orders-list{
+    display: flex;
+    margin-top: 125px;
 }
 
 #først{
@@ -39,6 +47,7 @@ h5{
     align-items: center;
     width: 95%;
     flex-direction: row;
+    margin-top: 20px;
 }
 
 .letter, .tekst{
@@ -62,7 +71,7 @@ footer{
     border: solid black;
     width:100%;
     background-color: #00A9E0;
-    margin-top: 65px;
+    margin-top: 250px;
     height: 150px;
     display: flex;
     flex-direction: column;
