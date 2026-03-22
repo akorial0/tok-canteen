@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tokerud Skole</title>
+        <link rel="stylesheet" href="/css/style.css">
+        <script src="/src/main.js" defer></script>
+
+
+        <!--import material design3 android elements-->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+        <script type="importmap">
+            {
+              "imports": {
+                "@material/web/": "https://esm.run/@material/web/"
+              }
+            }
+        </script>
+
+        <script type="module">
+            import '@material/web/all.js';
+        </script>
+
+        <!-- init custom fonts to mem -->
+        <style>
+            @font-face {
+                font-family: 'inter';
+                src: url('/media/fonts/inter-reg.ttf') format('truetype');
+                font-weight: 400;
+                font-style: normal;
+                font-display: swap;
+                font-optical-sizing: auto;
+
+            }
+
+            @font-face {
+                font-family: 'inter-b';
+                src: url('/media/fonts/inter-bold.ttf') format('truetype');
+                font-weight: 400;
+                font-style: normal;
+                font-display: swap;
+                font-optical-sizing: auto;
+            }
+            @font-face {
+                font-family: 'roboto';
+                src: url('/media/fonts/libroboto/Roboto-Regular') format('truetype');
+                font-weight: 400;
+                font-style: normal;
+                font-display: swap;
+                font-optical-sizing: auto;
+                }
+                @font-face {
+                font-family: "openrunde";
+                src: url("/media/fonts/libopenrunde/Media/fontlib/libopenrunde/OpenRunde-Regular.woff") format("woff");
+                font-weight: 400;
+                font-style: normal;
+                font-display: swap;
+            }
+        </style>
+        </head>
+        <body>
+
+
+        <!-- render progrssive blur. may be unstable on gecko/firefox or webkit/safari. chromium works just fine hehe :3 --->
+        <div class="wrapper">
+            <div class="progressive-blur">
+                <div class="blur"></div>
+                <div class="blur"></div>
+                <div class="blur"></div>
+                <div class="blur"></div>
+                <div class="blur"></div>
+            </div>
+            <img src="/media/tokerud.png" alt="Custom Image" fetchpriority="high" id="bannerimg"/>
+            <div class="banner-fade"></div>
+        </div>
+
+
+  <div id="header">
+        <h1  id="headtext">Tokerud</h1>
+        <h1 id="headtext">Kantine</h1>
+    
+    </div>
+
+
+            <div id="main-content">
+                <h1 id="hea1">Meny</h1>
+                <h1 id="hea2" id="diableGlyph_patch">Sist enderet Apr 1, 2025</h1>
+
+        <!-- render progrssive blur. may be unstable on gecko/firefox or webkit/safari. chromium works just fine hehe :3 --->
+        <div class="wrapper">
+            <div class="progressive-blur">
+                <div class="blur"></div>
+                <div class="blur"></div>
+                <div class="blur"></div>
+                <div class="blur"></div>
+                <div class="blur"></div>
+            </div>
+        </div>
+
+
+
+
+<div id="menu-columns">
+
+  <!-- Column 1: Drikker + Smoothies -->
+  <div class="menu-column diableGlyph-patch">
+    <md-list>
+      <md-list-item class="category-header">Drikker</md-list-item>
+      <md-divider></md-divider>
+      <md-list-item type="link" href="/melk">Melk <span slot="end">17kr</span></md-list-item>
+      <md-list-item type="link" href="/vann-uten-kullsyre">Vann u/ kullsyre <span slot="end">18kr</span></md-list-item>
+      <md-list-item type="link" href="/vann-med-kullsyre">Vann m/ kullsyre <span slot="end">20kr</span></md-list-item>
+      <md-list-item type="link" href="/sjokolademelk">Sjokolade melk <span slot="end">20kr</span></md-list-item>
+
+      <md-list-item class="category-header">Smoothies</md-list-item>
+      <md-divider></md-divider>
+      <md-list-item type="link" href="/smoothie-mango">Mango <span slot="end">20kr</span></md-list-item>
+      <md-list-item type="link" href="/smoothie-appelsin">Appelsin <span slot="end">20kr</span></md-list-item>
+      <md-list-item type="link" href="/smoothie-banan">Banan <span slot="end">20kr</span></md-list-item>
+      <md-list-item type="link" href="/smoothie-jordbaer">Jordbær <span slot="end">20kr</span></md-list-item>
+    </md-list>
+  </div>
+
+  <!-- Column 2: Knekkebrød -->
+  <div class="menu-column diableGlyph-patch">
+    <md-list>
+      <md-list-item class="category-header">Knekkebrød</md-list-item>
+      <md-divider></md-divider>
+      <md-list-item type="link" href="/knekk-brunost">Brunost <span slot="end">17kr</span></md-list-item>
+      <md-list-item type="link" href="/knekk-cheese-chives">Cheese and Chives <span slot="end">18kr</span></md-list-item>
+      <md-list-item type="link" href="/knekk-sour-cream-onion">Sour Cream and Onion <span slot="end">20kr</span></md-list-item>
+    </md-list>
+  </div>
+
+  <!-- Column 3: Yogurt -->
+  <div class="menu-column diableGlyph-patch">
+    <md-list>
+      <md-list-item class="category-header">Yogurt</md-list-item>
+      <md-divider></md-divider>
+      <md-list-item type="link" href="/yogurt-vanilje">Vanilje yogurt (liten) <span slot="end">5kr</span></md-list-item>
+      <md-list-item type="link" href="/yogurt-mango">Mango <span slot="end">12kr</span></md-list-item>
+      <md-list-item type="link" href="/yogurt-banan">Banan <span slot="end">12kr</span></md-list-item>
+    </md-list>
+  </div>
+
+</div>
+</body>
+</html>
