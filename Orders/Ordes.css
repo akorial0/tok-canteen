@@ -107,4 +107,6 @@ footer{
 }
 ::placeholder{
     color: #6750A4;
+    padding-left: 10px;
+    display: flex;
 }
