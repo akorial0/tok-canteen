@@ -86,6 +86,7 @@ footer{
     border-radius: 50px;
     margin-left: auto;
     border: none;
+    cursor: pointer;
 }
 
 #sokefelt{
