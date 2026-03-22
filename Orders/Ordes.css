@@ -105,8 +105,21 @@ footer{
     margin-top: 10px;
     margin-left: 8px;
 }
+
 ::placeholder{
     color: #6750A4;
     padding-left: 10px;
     display: flex;
+}
+
+#bell{
+    display: flex;
+    margin-top: 8px;
+}
+
+#avatar{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    margin-top: 7px;
 }
