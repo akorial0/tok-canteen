@@ -8,19 +8,17 @@ h1{
    font-weight: 400;
    color: #1D1B20;
    margin-bottom: 15px;
-   margin-left: 25px;
+   margin-left: 20px;
 }
 
 h5{
-   font-size: 25px;
+   font-size: 18px;
    font-weight: 200;
    color: #49454F;
    letter-spacing: 0,1px;
    margin-top: 20px;
    margin-left: 20px;
 }
-
-
 
 .order{
     display: flex;
@@ -33,6 +31,7 @@ h5{
     padding-right: 15px;
     border-radius: 15px;
 }
+
 #først{
     justify-content: center;
     gap: 20px;
@@ -41,7 +40,6 @@ h5{
     width: 95%;
     flex-direction: row;
 }
-
 
 .letter, .tekst{
     margin-left: 20px;
@@ -69,6 +67,7 @@ footer{
     display: flex;
     flex-direction: column;
 }
+
 #logo{
     height: 90px;
     display: flex;
@@ -77,6 +76,7 @@ footer{
     margin-left: 10px;
     margin-top: 8px;
 }
+
 .fjerner{
     width: 80px;
     height: 35px;
@@ -115,6 +115,7 @@ footer{
 #bell{
     display: flex;
     margin-top: 8px;
+    cursor: pointer;
 }
 
 #avatar{
@@ -122,4 +123,5 @@ footer{
     width: 50px;
     height: 50px;
     margin-top: 7px;
+    cursor: pointer;
 }
