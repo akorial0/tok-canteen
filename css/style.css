@@ -302,8 +302,9 @@ md-list {
   position: absolute;
   bottom: 0;
   left: 0;
+  top: 1000;
   width: 100%;
-  height: 31 0%;  /* how tall the fade zone is */
+   height: 40%;
   background: linear-gradient(to bottom, transparent, #ffffff);
   z-index: 7;   /* above your blur layers (which go up to z-index 5) */
   pointer-events: none;
@@ -319,39 +320,38 @@ md-list {
 
 .progressive-blur>div:nth-child(1) {
     filter: blur(4px);
-    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 16%, rgba(0, 0, 0, 1) 32.8%, rgba(0, 0, 0, 1) 49.6%, rgba(0, 0, 0, 0) 66.4%);
-    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 16%, rgba(0, 0, 0, 1) 32.8%, rgba(0, 0, 0, 1) 49.6%, rgba(0, 0, 0, 0) 66.4%);
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 31%, rgba(0, 0, 0, 1) 47.8%, rgba(0, 0, 0, 1) 64.6%, rgba(0, 0, 0, 0) 81.4%);
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 31%, rgba(0, 0, 0, 1) 47.8%, rgba(0, 0, 0, 1) 64.6%, rgba(0, 0, 0, 0) 81.4%);
     z-index: 1;
 }
 
 .progressive-blur>div:nth-child(2) {
     filter: blur(8px);
-    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 32.8%, rgba(0, 0, 0, 1) 49.6%, rgba(0, 0, 0, 1) 66.4%, rgba(0, 0, 0, 0) 83.2%);
-    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 32.8%, rgba(0, 0, 0, 1) 49.6%, rgba(0, 0, 0, 1) 66.4%, rgba(0, 0, 0, 0) 83.2%);
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 47.8%, rgba(0, 0, 0, 1) 64.6%, rgba(0, 0, 0, 1) 81.4%, rgba(0, 0, 0, 0) 98.2%);
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 47.8%, rgba(0, 0, 0, 1) 64.6%, rgba(0, 0, 0, 1) 81.4%, rgba(0, 0, 0, 0) 98.2%);
     z-index: 2;
 }
 
 .progressive-blur>div:nth-child(3) {
     filter: blur(16px);
-    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 49.6%, rgba(0, 0, 0, 1) 66.4%, rgba(0, 0, 0, 1) 83.2%, rgba(0, 0, 0, 0) 100%);
-    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 49.6%, rgba(0, 0, 0, 1) 66.4%, rgba(0, 0, 0, 1) 83.2%, rgba(0, 0, 0, 0) 100%);
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 64.6%, rgba(0, 0, 0, 1) 81.4%, rgba(0, 0, 0, 1) 98.2%, rgba(0, 0, 0, 0) 100%);
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 64.6%, rgba(0, 0, 0, 1) 81.4%, rgba(0, 0, 0, 1) 98.2%, rgba(0, 0, 0, 0) 100%);
     z-index: 3;
 }
 
 .progressive-blur>div:nth-child(4) {
     filter: blur(32px);
-    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 66.4%, rgba(0, 0, 0, 1) 83.2%, rgba(0, 0, 0, 1) 100%);
-    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 66.4%, rgba(0, 0, 0, 1) 83.2%, rgba(0, 0, 0, 1) 100%);
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 81.4%, rgba(0, 0, 0, 1) 98.2%, rgba(0, 0, 0, 1) 100%);
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 81.4%, rgba(0, 0, 0, 1) 98.2%, rgba(0, 0, 0, 1) 100%);
     z-index: 4;
 }
 
 .progressive-blur>div:nth-child(5) {
     filter: blur(64px);
-    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 83.2%, rgba(0, 0, 0, 1) 100%);
-    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 83.2%, rgba(0, 0, 0, 1) 100%);
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 98.2%, rgba(0, 0, 0, 1) 100%);
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 98.2%, rgba(0, 0, 0, 1) 100%);
     z-index: 5;
 }
-
 #main-content {
     color: black;
 }
