@@ -20,7 +20,7 @@
 
     document.adoptedStyleSheets.push(typescaleStyles.styleSheet);
   </script>
-        </script>
+        </script/>
 
 
         <style>
@@ -50,8 +50,14 @@
 <div id="login-container">
     <img src="/Orders/Media/generic avatar.svg" id="avatar" />
     <div id="loginf">
-        <md-filled-text-field label="Username" type="email"></md-filled-text-field>
-        <md-filled-text-field label="Password" type="password"></md-filled-text-field>
+      <md-filled-text-field id="username" label="Username"></md-filled-text-field>
+<md-filled-text-field id="password" label="Password" type="password"></md-filled-text-field>
+
+<br><br>
+
+<md-filled-button onclick="login()">Logg inn</md-filled-button>
+
+<p id="melding"></p>
     </div>
 </div>
 </div>
