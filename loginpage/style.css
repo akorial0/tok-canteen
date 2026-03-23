@@ -1,8 +1,31 @@
-html, body {
-    height: 100%;
-    margin: 0;
+/* Reset default margins and prevent horizontal scrolling */
+body {
+
+    font-family: inter;
+
+      -webkit-text-stroke: 0.5px; 
+        -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+    font-weight: 400;
+
+}
+:root {
+  --inter-stroke: 0.7px;
+  --other-stroke: 0;
 }
 
+body {
+  -webkit-text-stroke: var(--other-stroke);
+}
+
+h1, p, #hea1 {  /* wherever you use Inter */
+  -webkit-text-stroke: var(--inter-stroke);
+}
+
+#hea2 {  /* Roboto elements */
+  -webkit-text-stroke: var(--other-stroke);
+}
 body {
     font-family: inter;
     background-color: #ffffff;

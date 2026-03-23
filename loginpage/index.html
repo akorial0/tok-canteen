@@ -20,7 +20,7 @@
 
     document.adoptedStyleSheets.push(typescaleStyles.styleSheet);
   </script>
-        </script>
+        </script/>
 
 
         <style>
@@ -38,8 +38,6 @@
 
     </head>
     <body>
-        <!--progress bar. shows when pressing "Fjern". invisible until javascript changes the opacity-->
-        <md-linear-progress id="fjern-progress" value="0" style="opacity: 0; transition: opacity 0.3s ease;"></md-linear-progress>
        
         </div>
 
@@ -48,10 +46,16 @@
     <h1 id="hea2">Tokerud skole kantine</h>
 </div>
 <div id="login-container">
-    <img src="/Orders/Media/generic avatar.svg" id="avatar" />
+    <img src="/loginpage/Media/generic avatar.svg" id="avatar" />
     <div id="loginf">
-        <md-filled-text-field label="Username" type="email"></md-filled-text-field>
-        <md-filled-text-field label="Password" type="password"></md-filled-text-field>
+      <md-filled-text-field id="username" label="Username"></md-filled-text-field>
+<md-filled-text-field id="password" label="Password" type="password"></md-filled-text-field>
+
+<br><br>
+
+<md-filled-button onclick="login()">Logg inn</md-filled-button>
+
+<p id="melding"></p>
     </div>
 </div>
 </div>
@@ -64,4 +68,4 @@
         <a href="https://tokerud.osloskolen.no/" id="addrlink">Inga Bjørnsonsvei 1A, 0969 Oslo</a>
     </div>
 </footer></body></html>
-
+ 
