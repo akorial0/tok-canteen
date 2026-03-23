@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Admin Side</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="main.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <script type="importmap">
+    {
+      "imports": {
+        "@material/web/": "https://esm.run/@material/web/"
+      }
+    }
+  </script>
+  <script type="module">
+    import '@material/web/all.js';
+    import {styles as typescaleStyles} from '@material/web/typography/md-typescale-styles.js';
+
+    document.adoptedStyleSheets.push(typescaleStyles.styleSheet);
+  </script>
+        </script>
+
+
+        <style>
+            /*init fonts*/
+            @font-face {
+                font-family: 'inter';
+                src: url('/media/fonts/inter-reg.ttf') format('truetype');
+                font-weight: 400;
+                font-style: normal;
+                font-display: swap;
+                font-optical-sizing: auto
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <!--progress bar. shows when pressing "Fjern". invisible until javascript changes the opacity-->
+        <md-linear-progress id="fjern-progress" value="0" style="opacity: 0; transition: opacity 0.3s ease;"></md-linear-progress>
+       
+        </div>
+
+<div>
+    <h1 id="hea1">Login</h1>
+    <h1 id="hea2">Tokerud skole kantine</h>
+</div>
+<div id="login-container">
+    <img src="/Orders/Media/generic avatar.svg" id="avatar" />
+    <div id="loginf">
+        <md-filled-text-field label="Username" type="email"></md-filled-text-field>
+        <md-filled-text-field label="Password" type="password"></md-filled-text-field>
+    </div>
+</div>
+</div>
+
+<footer>
+    <div id="logo">
+        <img src="Media/OsloskolenLogo 2.svg" alt="">
+    </div>
+    <div id="link">
+        <a href="https://tokerud.osloskolen.no/" id="addrlink">Inga Bjørnsonsvei 1A, 0969 Oslo</a>
+    </div>
+</footer></body></html>
+

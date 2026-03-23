@@ -1,4 +1,14 @@
 <!DOCTYPE html>
+  
+   <!--CODE SYNOPSIS
+   
+   Init custom fonts to mem: prepare and specify custom fonts for use.
+   
+   "md__": Google Material 3, seen often in Android user interfaces. Material Web Componets lets us use these in websites.
+   
+   "id="diableGlyph_patch""": a quick patch i made to fix a bug with the Inter font rendering under chromium. this ID tries to avoid breaking fonts that DONT need this patch.
+   
+             FILE SYNOPSIS: -->
 <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -32,6 +42,7 @@
                 font-style: normal;
                 font-display: swap;
                 font-optical-sizing: auto;
+
             }
 
             @font-face {
@@ -71,19 +82,21 @@
                 <div class="blur"></div>
                 <div class="blur"></div>
             </div>
-            <img src="/media/tokerud.webp" alt="Custom Image" fetchpriority="high"/>
+            <img src="/media/tokerud.png" alt="Custom Image" fetchpriority="high" id="bannerimg"/>
+            <div class="banner-fade"></div>
         </div>
 
-        <!--this header isnt being used for anything-->
-        <!--but for margin and padding reasons, please dont remove me! ＞﹏＜ -->
-        <div id="header">
-            <h1></h1>
-            <h1></h1>
+
+  <div id="header">
+        <h1  id="headtext">Tokerud</h1>
+        <h1 id="headtext">Kantine</h1>
+    
+    </div>
 
 
             <div id="main-content">
                 <h1 id="hea1">Meny</h1>
-                <h1 id="hea2">Sist enderet Apr 1, 2025</h1>
+                <h1 id="hea2" id="diableGlyph_patch">Sist enderet Apr 1, 2025</h1>
 
         <!-- render progrssive blur. may be unstable on gecko/firefox or webkit/safari. chromium works just fine hehe :3 --->
         <div class="wrapper">
@@ -102,43 +115,43 @@
 <div id="menu-columns">
 
   <!-- Column 1: Drikker + Smoothies -->
-  <div class="menu-column">
+  <div class="menu-column diableGlyph-patch">
     <md-list>
       <md-list-item class="category-header">Drikker</md-list-item>
       <md-divider></md-divider>
-      <md-list-item>Melk <span slot="end">17kr</span></md-list-item>
-      <md-list-item>Vann u/ kullsyre <span slot="end">18kr</span></md-list-item>
-      <md-list-item>Vann m/ kullsyre <span slot="end">20kr</span></md-list-item>
-      <md-list-item>Sjokolade melk <span slot="end">20kr</span></md-list-item>
+      <md-list-item type="link" href="/melk">Melk <span slot="end">17kr</span></md-list-item>
+      <md-list-item type="link" href="/vann-uten-kullsyre">Vann u/ kullsyre <span slot="end">18kr</span></md-list-item>
+      <md-list-item type="link" href="/vann-med-kullsyre">Vann m/ kullsyre <span slot="end">20kr</span></md-list-item>
+      <md-list-item type="link" href="/sjokolademelk">Sjokolade melk <span slot="end">20kr</span></md-list-item>
 
       <md-list-item class="category-header">Smoothies</md-list-item>
       <md-divider></md-divider>
-      <md-list-item>Mango <span slot="end">20kr</span></md-list-item>
-      <md-list-item>Appelsin <span slot="end">20kr</span></md-list-item>
-      <md-list-item>Banan <span slot="end">20kr</span></md-list-item>
-      <md-list-item>Jordbær <span slot="end">20kr</span></md-list-item>
+      <md-list-item type="link" href="/smoothie-mango">Mango <span slot="end">20kr</span></md-list-item>
+      <md-list-item type="link" href="/smoothie-appelsin">Appelsin <span slot="end">20kr</span></md-list-item>
+      <md-list-item type="link" href="/smoothie-banan">Banan <span slot="end">20kr</span></md-list-item>
+      <md-list-item type="link" href="/smoothie-jordbaer">Jordbær <span slot="end">20kr</span></md-list-item>
     </md-list>
   </div>
 
   <!-- Column 2: Knekkebrød -->
-  <div class="menu-column">
+  <div class="menu-column diableGlyph-patch">
     <md-list>
       <md-list-item class="category-header">Knekkebrød</md-list-item>
       <md-divider></md-divider>
-      <md-list-item>Brunost <span slot="end">17kr</span></md-list-item>
-      <md-list-item>Cheese and Chives <span slot="end">18kr</span></md-list-item>
-      <md-list-item>Sour Cream and Onion <span slot="end">20kr</span></md-list-item>
+      <md-list-item type="link" href="/knekk-brunost">Brunost <span slot="end">17kr</span></md-list-item>
+      <md-list-item type="link" href="/knekk-cheese-chives">Cheese and Chives <span slot="end">18kr</span></md-list-item>
+      <md-list-item type="link" href="/knekk-sour-cream-onion">Sour Cream and Onion <span slot="end">20kr</span></md-list-item>
     </md-list>
   </div>
 
   <!-- Column 3: Yogurt -->
-  <div class="menu-column">
+  <div class="menu-column diableGlyph-patch">
     <md-list>
       <md-list-item class="category-header">Yogurt</md-list-item>
       <md-divider></md-divider>
-      <md-list-item>Vanilje yogurt (liten) <span slot="end">5kr</span></md-list-item>
-      <md-list-item>Mango <span slot="end">12kr</span></md-list-item>
-      <md-list-item>Banan <span slot="end">12kr</span></md-list-item>
+      <md-list-item type="link" href="/yogurt-vanilje">Vanilje yogurt (liten) <span slot="end">5kr</span></md-list-item>
+      <md-list-item type="link" href="/yogurt-mango">Mango <span slot="end">12kr</span></md-list-item>
+      <md-list-item type="link" href="/yogurt-banan">Banan <span slot="end">12kr</span></md-list-item>
     </md-list>
   </div>
 
