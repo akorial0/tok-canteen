@@ -1,0 +1,83 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: inter;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+        display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 55px;
+    font-weight: 400;
+    color: #1D1B20;
+    margin-bottom: 15px;
+    margin-left: 150px;
+}
+
+
+#hea2 {
+letter-spacing: 3px;
+font-family: roboto;
+font-size: 20px;
+margin-bottom: 10vh;
+}
+#hea1 {
+    margin-top: 20vh;
+    font-size: 8vh;
+    
+
+}
+
+#login-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+#avatar {
+    position: absolute;
+    left: calc(59% - 300px - 60px); /* centers based on field width + gap */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#loginf {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 300px;
+        justify-content: center;
+}
+
+md-filled-text-field {
+    width: 100%;
+}
+
+md-filled-text-field {
+    width: 100%;
+}
+footer {
+    width: 100%;
+    background-color: #00A9E0;
+    margin-top: auto; /* this pushes the footer to the bottom */
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50vh;
+}
+
+#logo {
+    height: 90px;
+    display: flex;
+    width: 67px;
+    color: #000000;
+    margin-left: 10px;
+    margin-top: 8px;
+}
+
